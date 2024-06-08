@@ -1,0 +1,576 @@
+@import 'config';
+@import 'utilities';
+@import 'media';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    box-sizing: border-box;
+
+}
+
+.bg-1{
+    background-color: $bg-color2;
+    color: #f4fff4;
+}
+
+.bg-2{
+    background-color: $bg-color3;
+}
+
+
+// Index
+.nav-area{ width: 100%;}
+
+#menu{
+    border-bottom:  1px transparent solid;
+    transition: border-color 0.5s;
+
+    &:hover{
+        border-color: #f4fff4;
+    }
+}
+
+.current{
+    color: #FEEC7E;
+}
+
+
+#search{
+   padding-top: 1em;
+   padding-bottom: 0.875em;
+   display: flex;
+
+   
+    .searchbar{
+        width: 500px;
+        height: 30px;
+        border-radius: 5px;
+        background: $bg-color1;
+    }
+
+    ::placeholder{
+        color: #D6D1D1;
+        padding-left: 40px;
+    }
+    
+    .button-1{
+        position: relative;
+        border: none;
+        cursor: pointer;
+        right: 30px;
+        background: none;
+    }
+    .searchicon{
+        padding: 2px;
+        width: 20px;
+        height: 25px;
+       background: #FBEBAD;
+       border-radius: 50%;
+
+    }
+
+}
+
+
+.banner-image{
+    width: 100%;
+    height: 400px;
+}
+
+
+#arrivals{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.line{
+    border-bottom: 3px solid #333;
+    width: 550px;
+    margin: auto;
+}
+
+.perfumes{
+    display: grid;
+    grid-gap: 2.5px;
+    grid-template-columns: repeat(3, 1fr);
+    h4{
+        color: green;
+        padding: 2px;
+        width: 150px;
+        font-size: 1rem;
+        margin: auto;
+    }
+}
+
+.perfume-1,
+.perfume-2,
+.perfume-3{
+    margin: auto;
+}
+
+.perfume-image{
+    width: 300px;
+    height: 300px;
+
+}
+
+
+
+#signup-container{
+        background: $bg-color2;
+        padding: 1rem;
+        width: 850px;
+        border-radius: 7px;
+
+
+        .emailvalue, .phonevalue{
+            background: $bg-color1;
+            border-radius: 5px;
+            border-style: none;
+            height: 35px;
+            width: 50%;
+        }
+
+        ::placeholder{ 
+            text-align: center; 
+            text-transform: uppercase;
+        }
+
+        .signup-form{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 1rem;
+        }
+        .signup-button{
+            border-style: none;
+            width: 30%;
+            
+            h4{
+                font-weight: bold;
+                margin: auto;
+            }
+        }
+
+        
+    }
+   
+
+    #footer-main{
+        background: $bg-color3;
+    
+        #footer-a{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+            color: white;
+            text-align: center;
+            padding-top: 2rem;
+            a{
+                text-decoration: none;
+                padding: 1.5rem;
+                color: #f4fff4;
+            }
+            .foot{
+                padding: 0.5rem;
+            }
+    }
+}
+
+//Copyright Section
+#Copyright-a{
+    background: $bg-color4;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+
+.Copyright-text{
+    font-size: 16px;
+    color: #f4fff4;
+    margin: 0;
+}
+
+
+//Make Ur Brand PAGE
+
+.urBrand{
+    background: $bg-color2;
+    font-family: 'Raleway', sans-serif;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1850px;
+
+    &-1{
+        color: white;
+        font-size: 1.8rem;
+        #chat{
+            img{
+                width: 25%;
+                border-radius: 9px;
+            }
+            #Whatsapp{
+                width: 40%;
+            }
+        }
+    }
+
+    &-2{
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem;
+        #moreInfo{
+            width: 100%;
+            height: 200px; /* Adjust height as needed */
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none; /* Disable resizing */
+            overflow-x: auto; /* Add horizontal scrollbar */
+           
+        }
+        .moreInfo:focus::placeholder{
+            color: transparent;
+        }
+        label{
+            display: block;
+        }
+        #scents{
+            width: 160px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .emailBrand{
+            width: 100%;
+            height: 40px;
+
+        }
+    }
+}
+
+
+//Bulk Order
+
+.product-section{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    .arrow-position{
+        position: relative;
+        top: 60px;
+        .large-arrow{
+            font-size: 2rem;
+        }
+    }
+    .bulk-order{
+        border: #333 solid 1pt;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        cursor: pointer;
+        .font-h6{
+            font-size: 16px;
+        }
+        .bulk-image{
+            width: 100px;
+            height: 100px;
+        }
+        
+    }
+}
+
+
+// The Ordering Form
+
+
+    .ordering-form{
+        width: 850px;
+        background: $bg-color2;
+        color: $bg-color1;
+        border-radius: 7px;
+
+        form {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem; 
+            justify-content: center;  
+            font-size: 16px;    
+            margin-top: 15px;  
+        }
+
+        #pick{
+            height: 30px;
+            border-radius: 5px;
+        }
+        #total-quantity{
+            height: 30px;
+            width: 80px;
+            border-radius: 5px;
+        }
+
+        
+        .signup-button{
+            border-style: none;
+            width: 100px;
+            height: 30px;
+            
+            h5{
+                font-weight: bold;
+                margin: auto;
+            }
+        }
+    }
+
+
+    // Products ordered
+.orders{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    gap: 1rem;
+
+    
+    .product{
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+        color: black;
+        font-size: 16px;
+
+        .list{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .cancel{
+                position: relative;
+                left: -25px;
+                font-size: 12px;
+            }
+        }
+
+        .product_title{
+            background: $bg-color3;
+            color: #fff;
+        }
+    }
+
+    .quantity{
+        justify-content: center;
+        text-align: center;
+        width: 100px;
+        color: black;
+        font-size: 16px;
+
+        .quantity_title{
+            background: $bg-color3;
+            color: #fff;
+        }
+    }
+
+    .unit{
+        justify-content: center;
+        text-align: center;
+        width: 150px;
+        color: black;
+        font-size: 16px;
+
+        .unit_title{
+            background: $bg-color3;
+            color: #fff;
+        }
+    }
+    
+    .discount{
+        justify-content: center;
+        text-align: center;
+        width: 150px;
+        color: black;
+        font-size: 16px;
+
+        .discount_title{
+            background: $bg-color3;
+            color: #fff;
+        }
+    }
+
+    .Total{
+        justify-content: center;
+        text-align: center;
+        width: 150px;
+        color: black;
+        font-size: 16px;
+
+        .Total_title{
+            background: $bg-color3;
+            color: #fff;
+        }
+    }
+    
+}
+
+.pay-order{
+    position: relative;
+    left: 900px;
+    width: 100px;    
+}
+
+// FRAGRANCE PAGE
+.men-fragrance{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    .fragrance-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .fragrance-image{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    
+}
+
+.chat-wrap{
+    
+    width: 800px;
+    padding: 1rem;
+
+    #Whatsapp{
+        width: 200px;
+        border-radius: 7px;
+    }
+    
+    #chat{
+        width: 600px;
+        font-size: 20px;
+    }
+
+}
+    
+// GIFT SET PAGE
+.giftset{
+    width: 980px;
+    background: $bg-color1;
+    color: $bg-color2;
+    .large-arrow{
+        font-size: 2rem;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.giftText{
+    font-size: 18px;
+
+}
+#giftText-1{
+    font-weight: bold;
+}
+
+
+// CONTACT PAGE
+.contact{
+    .text-fields{
+        display: grid;
+        grid-template-areas: 
+        'name email'
+        'phone subject'
+        'message message';
+        gap: 1.5rem;
+
+        // GRID AREAS
+       .name-input{
+        grid-area: name;
+       }
+       .email-input {
+        grid-area: email;
+       }
+       .phone-input{
+        grid-area: phone;
+       }
+       .subject-input {
+        grid-area: subject;
+       }
+       .message-input{
+        grid-area: message;
+        height: 100px;
+       }
+    }
+}
+
+
+// DISPLAY PERFUME
+
+.displayPerfume{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+
+    .product{
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+
+        .perfume-image{
+            width: 85%;
+            height: 85%;
+        }
+    }
+
+}
+
+.product-info{
+    width: 350px;
+    .product-title-small{
+        color: $text-color1;
+        font-size: 16px;
+    }
+    .product-title{
+        color: #333;
+        font-size: 25px;
+        text-decoration: wavy;
+    }
+    .product-cost{
+        color: #f30a0a;
+        font-size: 20px;
+    }
+}
+
+.other-products{
+    width: 100%;
+}
+.other-products-a{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    .perfume-1{
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    .perfume-image{
+        width: 200px;
+        height: 200px;
+    }
+}
