@@ -11,6 +11,13 @@
   margin-left: 20;
 }
 
+.mainContainer {
+  max-width: 1600px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
 .bottom-line {
   background: #21165E;
   width: 850px;
@@ -25,6 +32,98 @@
   display: block;
 }
 
+@media (max-width: 768px) {
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .perfume-begin .sub-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .product-section .perfumes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .signup-section .container {
+    max-width: 600px;
+  }
+  .signup-section .input {
+    flex-direction: column;
+  }
+  .urBrand {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .urBrand-1 {
+    font-size: 1rem;
+  }
+  .products-ondisplay {
+    display: none;
+  }
+  .bulkOrderForm .ordering-form {
+    background: #21165E;
+    color: #F9F4F4;
+    border-radius: 7px;
+  }
+  .bulkOrderForm .ordering-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .fragrance-a .men-fragrance {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-page .contact {
+    width: 100%;
+    max-width: 500px;
+  }
+  .contact-page .contact .contact-page-a .text-fields {
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-template-areas: "name" "email" "phone" "subject" "message";
+  }
+  .contact-page .contact .contact-page-a .text-fields .name-input {
+    grid-area: name;
+  }
+  .contact-page .contact .contact-page-a .text-fields .email-input {
+    grid-area: email;
+  }
+  .contact-page .contact .contact-page-a .text-fields .phone-input {
+    grid-area: phone;
+  }
+  .contact-page .contact .contact-page-a .text-fields .subject-input {
+    grid-area: subject;
+  }
+  .contact-page .contact .contact-page-a .text-fields .message-input {
+    grid-area: message;
+    height: 100px;
+  }
+  .display-perfume-body {
+    display: flex;
+    padding: 20px;
+    flex-direction: column; /* Stack content on mobile */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .display-perfume-body .display-perfume-body-b .display-perfume-body-b-1 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .display-perfume-body .display-perfume-body-b .cost {
+    margin: auto;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +134,7 @@ body {
   line-height: 1.6;
   background: #fff;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .bg-1 {
@@ -44,6 +144,423 @@ body {
 
 .bg-2 {
   background-color: #302AAF;
+}
+
+.perfume-container {
+  width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.sub-menu {
+  display: flex;
+  gap: 50px;
+  padding-top: 0.5rem;
+  justify-content: center;
+  text-align: center;
+}
+.sub-menu .search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 9px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.sub-menu .search-input {
+  border: none;
+  padding: 5px;
+  width: 500px;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+}
+.sub-menu .search-button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+.sub-menu .search-button:hover {
+  background-color: #0056b3;
+}
+.sub-menu .navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.product-section .container {
+  max-width: 1450px;
+}
+.product-section .product-section-1 {
+  display: flex;
+  gap: 20px;
+}
+.product-section .product-section-1 .line {
+  border-bottom: 3px solid #333;
+  width: 350px;
+  margin: auto;
+}
+.product-section .perfumes .perfume-image {
+  width: 300px;
+  height: 300px;
+}
+
+.signup-section {
+  padding: 20px;
+}
+.signup-section .container {
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.signup-section .product-section-topic h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.signup-section .input {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.signup-section .input .input-1, .signup-section .input .input-2, .signup-section .input .input-3 {
+  flex: 1;
+}
+.signup-section .input input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.signup-section button.signup-button1 {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.signup-section button.signup-button1:hover {
+  background-color: #0056b3;
+}
+
+.main-footer .footer-a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  background: #302AAF;
+  width: 100%;
+}
+.main-footer .footer-a .footer-a1 h6 {
+  padding: 0.5rem;
+}
+.main-footer .footer-a a {
+  color: white;
+  text-transform: none;
+}
+.main-footer .footer-b {
+  background: #48077C;
+}
+
+.urBrand {
+  background: #21165E;
+  color: white;
+  padding: 20px;
+  border-radius: 9px;
+  max-width: 900px;
+  width: 100%;
+}
+.urBrand .urBrand-1 #Whatsapp {
+  width: 100px;
+  border-radius: 7px;
+}
+.urBrand .urBrand-2 {
+  justify-content: center;
+  text-align: center;
+}
+.urBrand .urBrand-2 .urBrand-form {
+  display: flex;
+  flex-direction: column;
+}
+.urBrand .urBrand-2 .urBrand-form .form-group label {
+  display: block;
+}
+.urBrand .urBrand-2 .urBrand-form .form-group #moreInfo {
+  width: 100%;
+  max-width: 400px;
+  height: 150px; /* Adjust height as needed */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; /* Disable resizing */
+  overflow-x: auto; /* Add horizontal scrollbar */
+}
+.urBrand .urBrand-2 .urBrand-form .form-group #scents {
+  width: 100%;
+  max-width: 150px;
+  height: 30px;
+  border-radius: 5px;
+}
+.urBrand .urBrand-2 .urBrand-form .form-group .emailBrand {
+  width: 100%;
+  max-width: 250px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.products-ondisplay-a {
+  display: flex;
+  gap: 25px;
+}
+.products-ondisplay-a .arrow-position {
+  position: relative;
+  top: 60px;
+}
+.products-ondisplay-a .arrow-position .large-arrow {
+  font-size: 2rem;
+}
+.products-ondisplay-a .bulk-order {
+  border: #333 solid 1pt;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+.products-ondisplay-a .bulk-order .font-h6 {
+  font-size: 16px;
+}
+.products-ondisplay-a .bulk-order .bulk-image {
+  width: 100px;
+  height: 100px;
+}
+
+.bulkOrderForm .ordering-form {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #21165E;
+  color: #F9F4F4;
+  border-radius: 7px;
+  padding: 20px;
+}
+.bulkOrderForm .ordering-form form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.bulkOrderForm .ordering-form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+.bulkOrderForm .ordering-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.bulkOrderForm .ordering-form h4 {
+  margin: 0;
+}
+.bulkOrderForm .ordering-form #pick, .bulkOrderForm .ordering-form #total-quantity {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.bulkOrderForm .ordering-form .signup-button {
+  border-style: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+.bulkOrderForm .ordering-form .signup-button h5 {
+  margin: 0;
+}
+
+.tableOrders .cancel {
+  color: red;
+}
+
+.tableOrders .pay-order {
+  margin-top: 20px;
+}
+
+.pay-order-a {
+  padding: 20px;
+}
+.pay-order-a .container {
+  max-width: 300px;
+}
+.pay-order-a button.pay-order-a {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.pay-order-a button.pay-order-a:hover {
+  background-color: #0056b3;
+}
+
+.men-fragrance {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.men-fragrance .fragrance-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.men-fragrance .fragrance-1 .fragrance-image {
+  width: 300px;
+  height: 300px;
+}
+
+.chat-wrap {
+  width: 100%;
+  padding: 1rem;
+}
+.chat-wrap #Whatsapp {
+  width: 200px;
+  border-radius: 7px;
+}
+.chat-wrap #chat {
+  font-size: 20px;
+}
+
+.giftset {
+  width: 100% x;
+  background: #F9F4F4;
+  color: #21165E;
+}
+.giftset .large-arrow {
+  font-size: 2rem;
+}
+.giftset a {
+  text-decoration: none;
+}
+
+.giftText {
+  font-size: 18px;
+}
+
+#giftText-1 {
+  font-weight: bold;
+}
+
+.contact {
+  width: 100%;
+  max-width: 500px;
+}
+.contact .bottom-line {
+  width: 100%;
+  max-width: 500px;
+}
+.contact .contact-page-a {
+  text-align: center;
+  justify-content: center;
+}
+.contact .contact-page-a .text-fields {
+  width: 100%;
+  max-width: 500px;
+  display: grid;
+  grid-template-areas: "name email" "phone subject" "message message";
+  gap: 1.5rem;
+}
+.contact .contact-page-a .text-fields .name-input {
+  grid-area: name;
+}
+.contact .contact-page-a .text-fields .email-input {
+  grid-area: email;
+}
+.contact .contact-page-a .text-fields .phone-input {
+  grid-area: phone;
+}
+.contact .contact-page-a .text-fields .subject-input {
+  grid-area: subject;
+}
+.contact .contact-page-a .text-fields .message-input {
+  grid-area: message;
+  height: 100px;
+}
+
+.display-perfume-page .container {
+  width: 100%;
+  max-width: 950px;
+}
+.display-perfume-page .container .display-perfume-body {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+.display-perfume-page .container .display-perfume-body .display-perfume-body-a {
+  margin: auto;
+}
+.display-perfume-page .container .display-perfume-body .display-perfume-body-a img {
+  width: 300px;
+  height: 300px;
+}
+.display-perfume-page .container .display-perfume-body .display-perfume-body-b {
+  max-width: 400px;
+  margin: auto;
+}
+.display-perfume-page .container .display-perfume-body .display-perfume-body-b .display-perfume-body-b-1 {
+  display: flex;
+  gap: 5px;
+}
+.display-perfume-page .container .display-perfume-body .display-perfume-body-b .display-perfume-body-b-1 #first {
+  width: 100px;
+  height: 30px;
+  border: solid #333;
+}
+.display-perfume-page .container .display-perfume-body .display-perfume-body-b .display-perfume-body-b-1 #second {
+  width: 55px;
+  height: 30px;
+  border: solid #333;
+}
+.display-perfume-page .container .display-perfume-body .display-perfume-body-b .cost {
+  width: 85px;
+  height: 60px;
+  border: solid #333;
+  border-radius: 100%;
+  text-align: center;
+  padding: 9px;
 }
 
 .nav-area {
@@ -198,56 +715,6 @@ body {
   margin: 0;
 }
 
-.urBrand {
-  background: #21165E;
-  font-family: "Raleway", sans-serif;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-  width: 1850px;
-}
-.urBrand-1 {
-  color: white;
-  font-size: 1.8rem;
-}
-.urBrand-1 #chat img {
-  width: 25%;
-  border-radius: 9px;
-}
-.urBrand-1 #chat #Whatsapp {
-  width: 40%;
-}
-.urBrand-2 {
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-.urBrand-2 #moreInfo {
-  width: 100%;
-  height: 200px; /* Adjust height as needed */
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  resize: none; /* Disable resizing */
-  overflow-x: auto; /* Add horizontal scrollbar */
-}
-.urBrand-2 .moreInfo:focus::placeholder {
-  color: transparent;
-}
-.urBrand-2 label {
-  display: block;
-}
-.urBrand-2 #scents {
-  width: 160px;
-  border-radius: 5px;
-  font-size: 20px;
-}
-.urBrand-2 .emailBrand {
-  width: 100%;
-  height: 40px;
-}
-
 .product-section {
   display: flex;
   flex-direction: row;
@@ -273,39 +740,6 @@ body {
 .product-section .bulk-order .bulk-image {
   width: 100px;
   height: 100px;
-}
-
-.ordering-form {
-  width: 850px;
-  background: #21165E;
-  color: #F9F4F4;
-  border-radius: 7px;
-}
-.ordering-form form {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: center;
-  font-size: 16px;
-  margin-top: 15px;
-}
-.ordering-form #pick {
-  height: 30px;
-  border-radius: 5px;
-}
-.ordering-form #total-quantity {
-  height: 30px;
-  width: 80px;
-  border-radius: 5px;
-}
-.ordering-form .signup-button {
-  border-style: none;
-  width: 100px;
-  height: 30px;
-}
-.ordering-form .signup-button h5 {
-  font-weight: bold;
-  margin: auto;
 }
 
 .orders {
@@ -378,137 +812,6 @@ body {
 .orders .Total .Total_title {
   background: #302AAF;
   color: #fff;
-}
-
-.pay-order {
-  position: relative;
-  left: 900px;
-  width: 100px;
-}
-
-.men-fragrance {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-}
-.men-fragrance .fragrance-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.men-fragrance .fragrance-1 .fragrance-image {
-  width: 300px;
-  height: 300px;
-}
-
-.chat-wrap {
-  width: 800px;
-  padding: 1rem;
-}
-.chat-wrap #Whatsapp {
-  width: 200px;
-  border-radius: 7px;
-}
-.chat-wrap #chat {
-  width: 600px;
-  font-size: 20px;
-}
-
-.giftset {
-  width: 980px;
-  background: #F9F4F4;
-  color: #21165E;
-}
-.giftset .large-arrow {
-  font-size: 2rem;
-}
-.giftset a {
-  text-decoration: none;
-}
-
-.giftText {
-  font-size: 18px;
-}
-
-#giftText-1 {
-  font-weight: bold;
-}
-
-.contact .text-fields {
-  display: grid;
-  grid-template-areas: "name email" "phone subject" "message message";
-  gap: 1.5rem;
-}
-.contact .text-fields .name-input {
-  grid-area: name;
-}
-.contact .text-fields .email-input {
-  grid-area: email;
-}
-.contact .text-fields .phone-input {
-  grid-area: phone;
-}
-.contact .text-fields .subject-input {
-  grid-area: subject;
-}
-.contact .text-fields .message-input {
-  grid-area: message;
-  height: 100px;
-}
-
-.displayPerfume {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-}
-.displayPerfume .product {
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-}
-.displayPerfume .product .perfume-image {
-  width: 85%;
-  height: 85%;
-}
-
-.product-info {
-  width: 350px;
-}
-.product-info .product-title-small {
-  color: #595858;
-  font-size: 16px;
-}
-.product-info .product-title {
-  color: #333;
-  font-size: 25px;
-  text-decoration: wavy;
-}
-.product-info .product-cost {
-  color: #f30a0a;
-  font-size: 20px;
-}
-
-.other-products {
-  width: 100%;
-}
-
-.other-products-a {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-.other-products-a .perfume-1 {
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-}
-.other-products-a .perfume-image {
-  width: 200px;
-  height: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */

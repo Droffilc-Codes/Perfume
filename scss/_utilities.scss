@@ -11,6 +11,17 @@
     margin-left: 20;
 }
 
+.mainContainer{
+    max-width: $website-width;
+    padding: 0  1.5rem;
+    margin:  auto;
+    overflow: hidden;
+}
+
+
+
+
+
 .bottom-line{
     background: $bg-color2;
     width: 850px;
