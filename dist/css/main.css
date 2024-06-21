@@ -216,6 +216,30 @@ body {
   height: 300px;
 }
 
+.perfumes {
+  display: grid;
+  grid-gap: 2.5px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.perfumes h4 {
+  color: green;
+  padding: 2px;
+  width: 150px;
+  font-size: 1rem;
+  margin: auto;
+}
+
+.perfume-1,
+.perfume-2,
+.perfume-3 {
+  margin: auto;
+}
+
+.perfume-image {
+  width: 300px;
+  height: 300px;
+}
+
 .signup-section {
   padding: 20px;
 }
@@ -563,255 +587,13 @@ body {
   padding: 9px;
 }
 
-.nav-area {
-  width: 100%;
-}
-
-#menu {
-  border-bottom: 1px transparent solid;
-  transition: border-color 0.5s;
-}
-#menu:hover {
-  border-color: #f4fff4;
-}
-
 .current {
   color: #FEEC7E;
-}
-
-#search {
-  padding-top: 1em;
-  padding-bottom: 0.875em;
-  display: flex;
-}
-#search .searchbar {
-  width: 500px;
-  height: 30px;
-  border-radius: 5px;
-  background: #F9F4F4;
-}
-#search ::placeholder {
-  color: #D6D1D1;
-  padding-left: 40px;
-}
-#search .button-1 {
-  position: relative;
-  border: none;
-  cursor: pointer;
-  right: 30px;
-  background: none;
-}
-#search .searchicon {
-  padding: 2px;
-  width: 20px;
-  height: 25px;
-  background: #FBEBAD;
-  border-radius: 50%;
 }
 
 .banner-image {
   width: 100%;
   height: 400px;
-}
-
-#arrivals {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 2fr 1fr 2fr;
-}
-
-.line {
-  border-bottom: 3px solid #333;
-  width: 550px;
-  margin: auto;
-}
-
-.perfumes {
-  display: grid;
-  grid-gap: 2.5px;
-  grid-template-columns: repeat(3, 1fr);
-}
-.perfumes h4 {
-  color: green;
-  padding: 2px;
-  width: 150px;
-  font-size: 1rem;
-  margin: auto;
-}
-
-.perfume-1,
-.perfume-2,
-.perfume-3 {
-  margin: auto;
-}
-
-.perfume-image {
-  width: 300px;
-  height: 300px;
-}
-
-#signup-container {
-  background: #21165E;
-  padding: 1rem;
-  width: 850px;
-  border-radius: 7px;
-}
-#signup-container .emailvalue, #signup-container .phonevalue {
-  background: #F9F4F4;
-  border-radius: 5px;
-  border-style: none;
-  height: 35px;
-  width: 50%;
-}
-#signup-container ::placeholder {
-  text-align: center;
-  text-transform: uppercase;
-}
-#signup-container .signup-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 1rem;
-}
-#signup-container .signup-button {
-  border-style: none;
-  width: 30%;
-}
-#signup-container .signup-button h4 {
-  font-weight: bold;
-  margin: auto;
-}
-
-#footer-main {
-  background: #302AAF;
-}
-#footer-main #footer-a {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  color: white;
-  text-align: center;
-  padding-top: 2rem;
-}
-#footer-main #footer-a a {
-  text-decoration: none;
-  padding: 1.5rem;
-  color: #f4fff4;
-}
-#footer-main #footer-a .foot {
-  padding: 0.5rem;
-}
-
-#Copyright-a {
-  background: #48077C;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.Copyright-text {
-  font-size: 16px;
-  color: #f4fff4;
-  margin: 0;
-}
-
-.product-section {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-}
-.product-section .arrow-position {
-  position: relative;
-  top: 60px;
-}
-.product-section .arrow-position .large-arrow {
-  font-size: 2rem;
-}
-.product-section .bulk-order {
-  border: #333 solid 1pt;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-  cursor: pointer;
-}
-.product-section .bulk-order .font-h6 {
-  font-size: 16px;
-}
-.product-section .bulk-order .bulk-image {
-  width: 100px;
-  height: 100px;
-}
-
-.orders {
-  display: flex;
-  flex-direction: row;
-  width: 900px;
-  gap: 1rem;
-}
-.orders .product {
-  justify-content: center;
-  text-align: center;
-  width: 300px;
-  color: black;
-  font-size: 16px;
-}
-.orders .product .list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.orders .product .list .cancel {
-  position: relative;
-  left: -25px;
-  font-size: 12px;
-}
-.orders .product .product_title {
-  background: #302AAF;
-  color: #fff;
-}
-.orders .quantity {
-  justify-content: center;
-  text-align: center;
-  width: 100px;
-  color: black;
-  font-size: 16px;
-}
-.orders .quantity .quantity_title {
-  background: #302AAF;
-  color: #fff;
-}
-.orders .unit {
-  justify-content: center;
-  text-align: center;
-  width: 150px;
-  color: black;
-  font-size: 16px;
-}
-.orders .unit .unit_title {
-  background: #302AAF;
-  color: #fff;
-}
-.orders .discount {
-  justify-content: center;
-  text-align: center;
-  width: 150px;
-  color: black;
-  font-size: 16px;
-}
-.orders .discount .discount_title {
-  background: #302AAF;
-  color: #fff;
-}
-.orders .Total {
-  justify-content: center;
-  text-align: center;
-  width: 150px;
-  color: black;
-  font-size: 16px;
-}
-.orders .Total .Total_title {
-  background: #302AAF;
-  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
