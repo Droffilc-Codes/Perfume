@@ -596,4 +596,36 @@ body {
   height: 400px;
 }
 
+.dialog-overlay {
+  position: fixed; /* Fix the overlay to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background with opacity */
+  display: flex; /* Center the dialog box horizontally */
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-box {
+  background-color: white; /* Background color for the dialog box */
+  padding: 20px;
+  border-radius: 5px; /* Add rounded corners */
+  text-align: center; /* Center the message text */
+}
+
+.close-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Change cursor style on hover */
+}
+
+.close-btn:hover {
+  background-color: #444; /* Change background color on hover */
+}
+
 /*# sourceMappingURL=main.css.map */

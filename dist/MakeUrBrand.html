@@ -72,7 +72,7 @@
            <div class="urBrand-1 ml-5 p-2">
                <p>Unleash your inner perfumer!  In this section, we'll guide you through crafting your own bespoke fragrance line. From concept to creation, we'll translate your vision - be it a captivating aroma or a powerful emotion -  into a signature scent that embodies your brand's unique identity.</p>
                <p>We would contact you....</p>
-               <p id="chat">OR Chat us on <a href=""><img src="images/Whatsapp.png" id="Whatsapp" alt=""></a>  </p>
+               <p id="chat">OR Chat us on <a href="https://wa.me/+2348036317828?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20perfume%20collection."><img src="images/Whatsapp.png" id="Whatsapp" alt=""></a>  </p>
            </div>
 
            <div class="urBrand-2 mx-auto p-2">
@@ -84,29 +84,33 @@
                 <div class="form-group">
                     <label for="">Select Scent Family</label> 
                     <select name="" id="scents">
-                        <option value="">Floral</option>
-                        <option value="">Woody</option>
-                        <option value="">Citrus</option>
-                        <option value="">Fruity</option>
-                        <option value="">Herbal/Green</option>
-                        <option value="">Oriental</option>
-                        <option value="">Gourmand</option>
+                        <option value="Floral" selected>Floral</option>
+                        <option value="Woody">Woody</option>
+                        <option value="Citrus">Citrus</option>
+                        <option value="Fruity">Fruity</option>
+                        <option value="Herbal/Green">Herbal/Green</option>
+                        <option value="Oriental">Oriental</option>
+                        <option value="Gourmand">Gourmand</option>
                     </select> <br>
                 </div>
                 <div class="form-group">
                     <label for="">Email Address</label> 
-                    <input type="email" class="emailBrand" placeholder="email@email.com"> 
+                    <input type="email" class="emailBrand" placeholder="email@email.com" required> 
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-light">Send</button>
+                    <button class="btn btn-light sendBrand">Send</button>
                 </div>
                </form>
            </div>
         </div>
     </section>
 
+   
      
-
+    <div class="dialog-overlay" style="visibility: hidden;"> 
+        <div class="dialog-box">  <h4 class="dialog-box-msg">Message Sent Succesfully!</h4> <button class="close-btn">Close</button>
+    </div>
+  </div>
 
 
 
@@ -164,6 +168,7 @@
      </footer>
      
 
+    <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
