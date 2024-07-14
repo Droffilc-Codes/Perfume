@@ -418,6 +418,39 @@ body{
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
 
+    a{
+        text-decoration: none;
+        
+    }
+
+    .fragrance-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .fragrance-image{
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+
+.women-fragrance{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    a{
+        text-decoration: none;
+        
+    }
+
     .fragrance-1{
         display: flex;
         flex-direction: column;
@@ -590,25 +623,7 @@ body{
 // June 23
 // Message Sent Successfully
 // Make Ur Brand Page
-    // .message-board{
-    //     visibility: visible;
-    //     position: absolute;
-    //     top: 1000px;
-    //     left: 470px;
-    //     background: green;
-    //     width: 600px;
-    //     // height: 1000px;
-    //     padding: 20px;
-    //     display: flex;
-    //     justify-content: center;
 
-    //     .message-delivered{
-    //         color: $text-color2;
-    //         background: $bg-color3;
-    //         // height: 300px;
-            
-    //     }
-    // }
 
     .dialog-overlay {
         position: fixed; /* Fix the overlay to the viewport */
@@ -642,3 +657,87 @@ body{
         background-color: #444; /* Change background color on hover */
       }
 
+
+//JUNE 30
+.product-dialog-overlay {
+    // position: fixed; /* Fix the overlay to the viewport */
+    position: absolute; /* Fix the overlay to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background with opacity */
+    display: flex; /* Center the dialog box horizontally */
+    justify-content: center;
+    align-items: center;
+
+
+    .product-dialog-box {
+        position: relative; /* Make .dialog-box the reference for absolute positioning */
+        background-color: white; /* Background color for the dialog box */
+        padding: 20px;
+        border-radius: 5px; /* Add rounded corners */
+        text-align: center; /* Center the message text */
+        max-width: 300px;
+        width: 100%;
+
+        .product-description{
+            font-size: 10px;
+        }
+
+    .order-btn {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer; /* Change cursor style on hover */
+    }
+
+    .order-btn:hover {
+        background-color: #444; /* Change background color on hover */
+    }
+
+    .cancel {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #dialog-perfume-image { /*.perfume-image */
+        width: 70%; /*70% */
+        height: 70%;
+    }
+
+    .circle {
+        margin: 10px auto; /* Center the circle horizontally */
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #4CAF50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-family: Arial, sans-serif;
+        .product-cost {
+            .product-size{
+                margin: 0;
+                font-size: 15px;
+                color: black;
+            }
+            .cost{
+                margin: 0;
+                font-size: 15px;
+            }
+        }
+    }
+
+
+    }
+}

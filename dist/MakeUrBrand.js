@@ -13,7 +13,7 @@ const DOMStrings = {
    closeMessageAlert: '.close-btn',
    discountEmail: '.emailvalue1',
    discountPhone: '.phonevalue1',
-   discountButton: '.signup-button1'
+   discountButton: '.signup-button1',
 }
 
 //Model
@@ -31,7 +31,6 @@ document.querySelector(DOMStrings.send).addEventListener('click', (e)=>{
     let rejectEmail = validateEmail(getEmail) //validation of email
 
     if(getEmail === '' || rejectEmail === false){ // if a wrong email is filled or nothing is filled display warning
-            console.log("Plase enter email address")
             document.querySelector(DOMStrings.messageAlertWarning).innerHTML = 'Plase enter correct email address!'
             openBox()
         }else{
@@ -83,6 +82,7 @@ function validateEmail(email) {
 
 
 //Sign up and discount form
+////////////////////////
 document.querySelector(DOMStrings.discountButton).addEventListener('click', sendDiscountRequest)
 
 
@@ -95,12 +95,10 @@ function sendDiscountRequest(e){
     let getSignUpEmail = validateEmail(signupEmail)
 
     if(getPhoneNumber === false || getSignUpEmail === false){
-        console.log("Please enter correct email or phone number")
         document.querySelector(DOMStrings.messageAlertWarning).innerHTML = 'Please enter correct email or phone number!'
         openBox()
     }else{
-        console.log("You have signed up for news about Discounts!")
-        document.querySelector(DOMStrings.messageAlertWarning).innerHTML = 'Message Sent Succesfully!'
+        document.querySelector(DOMStrings.messageAlertWarning).innerHTML = 'Signed Up Succesfully!'
         openBox()
         
         document.querySelector(DOMStrings.discountEmail).value = ''
@@ -117,3 +115,4 @@ const nigeriaPhoneRegex = /^(?:\+234|0)?[789]\d{9}$/;
 function validateNigerianPhoneNumber(phoneNumber) {
     return nigeriaPhoneRegex.test(phoneNumber);
 }
+

@@ -38,11 +38,12 @@
                     
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle text-white h5" data-toggle="dropdown">NGN</a>
-                        <div class="dropdown-menu">
+                         <!-- Closed the drop down for currency for now -->
+                        <!-- <div class="dropdown-menu">
                             <a href="#" class="dropdown-item">USD</a>
                             <a href="#" class="dropdown-item">GBP</a>
                             <a href="#" class="dropdown-item">EUR</a>
-                        </div>
+                        </div> -->
                     
                 </ul>
                 
@@ -71,30 +72,91 @@
     <section class="main-section">
     
         <div class="fragrance-a container">
-            <div class="fragrance-men mt-2"><h2>MEN'S FRAGRANCE</h2></div>
+            <div class="fragrance-men mt-2" id="men-fragrance"><h2>MEN'S FRAGRANCE</h2></div>
             <div class="men-fragrance mt-2">
-                <div class="fragrance-1"> <img src="images/male1.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus dolorum</h4></div>
-                <div class="fragrance-1"> <img src="images/male2.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus dolorum</h4></div>
-                <div class="fragrance-1"> <img src="images/male3.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus dolorum</h4></div>
-                <div class="fragrance-1"> <img src="images/male4.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus dolorum</h4></div>
+                <!-- Place Holder for different Perfume -->
+                <!-- <a href="displayPerfume.html">
+                    <div class="fragrance-1 male1" id="10"> <img src="images/male1.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus One</h4></div>
+                </a>
+                <a href="displayPerfume.html">
+                    <div class="fragrance-1"> <img src="images/male2.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus Two</h4></div>
+                </a>
+                <a href="displayPerfume.html">
+                    <div class="fragrance-1"> <img src="images/male3.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus Three</h4></div>
+                </a>
+                <a href="displayPerfume.html">
+                    <div class="fragrance-1"> <img src="images/male4.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus Four</h4></div>
+                </a> -->
             </div>
 
-            <div class="fragrance-men mt-2"><h2>WOMEN'S FRAGRANCE</h2></div>
-            <div class="men-fragrance mt-2">
-                <div class="fragrance-1"> <img src="images/male1.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome1 accusamus dolorum</h4></div>
-                <div class="fragrance-1"> <img src="images/male2.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus dolorum</h4></div>
-                <div class="fragrance-1"> <img src="images/male3.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus dolorum</h4></div>
-                <div class="fragrance-1"> <img src="images/male4.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus dolorum</h4></div>
+            <div class="fragrance-men mt-2" id="women-fragrance"><h2>WOMEN'S FRAGRANCE</h2></div>
+            <div class="women-fragrance mt-2">
+                <!-- PlaceHolder for different Perfume -->
+                <!-- <a href="displayPerfume.html">
+                    <div class="fragrance-1"> <img src="images/male1.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome1 accusamus dolorum</h4></div>
+                </a>
+                <a href="displayPerfume.html">
+                    <div class="fragrance-1"> <img src="images/male2.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus dolorum</h4></div>
+                </a>
+                <a href="displayPerfume.html">
+                    <div class="fragrance-1"> <img src="images/male3.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus dolorum</h4></div>
+                </a>
+                <a href="displayPerfume.html">
+                    <div class="fragrance-1"> <img src="images/male4.jpg" class="fragrance-image" alt=""> <h4 class="text-center">Chrome accusamus dolorum</h4></div>
+                </a> -->
             </div>
         </div>
 
    
            <div class="chat-wrap container text-center mt-5">
-               <p id="chat ">Want to get any of these! Chat us on <a href=""><img src="images/Whatsapp.png" id="Whatsapp" alt=""></a></p>
+               <p id="chat ">Want to get any of these! Chat us on <a href="https://wa.me/+2348036317828?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20perfume%20collection." ><img src="images/Whatsapp.png" id="Whatsapp" alt=""></a></p>
            </div>
 
            
     </section>
+
+    <!-- Product Dialog Box displayed when a prouct is clicked -->
+    <div class="product-dialog-overlay" id="product-dialog" style="visibility: hidden;">
+        <div class="product-dialog-box">
+            <button class="cancel" id="dialog-close">x</button>
+            <div class="card-container">
+                <h2 class="product-name" id="dialog-product-name">Perfume name!</h2>
+                <div class="product-image">
+                    <img src="images/perf2.jpg" alt="perf-1" id="dialog-perfume-image">
+                </div>
+                <h5 class="brand-name-a" id="dialog-brand-name">A good Perfume</h5>
+                <h5 class="product-description" id="dialog-product-description">
+                    Elegant floral notes blend with warm amber and musk for a timeless, captivating fragrance.
+                </h5>
+                <div class="circle">
+                    <div class="product-cost">
+                        <p class="product-size" id="dialog-product-size">120ML</p>
+                        <p class="cost font-weight-bold" id="dialog-product-cost">N5,000.00</p>
+                    </div>
+                </div>
+            </div>
+            <a href="https://wa.me/+2348036317828?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20perfume%20collection." id="Whatsapp-order"><button class="order-btn">             
+                    Order
+                </button>
+            </a>
+        </div>
+    </div>
+    
+
+    <!-- Message Success or Failure -->
+    <div class="dialog-overlay" style="visibility: hidden;"> 
+        <div class="dialog-box">  <h4 class="dialog-box-msg">Message Sent Succesfully!</h4> <button class="close-btn">Close</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
    
 
     <!-- Signup Section -->
@@ -132,8 +194,8 @@
             <div class="footer-a1">
                 <h5 class="font-weight-bold">Perfume</h5>
                 <h6 class="foot font-weight-regular"><a href="Fragrance.html">Fragrance</a></h6>
-                <h6 class="foot font-weight-regular"><a href="Fragrance.html">Men</a></h6>
-                <h6 class="foot font-weight-regular"><a href="Fragrance.html">Women</a></h6>
+                <h6 class="foot font-weight-regular"><a href="Fragrance.html#men-fragrance">Men</a></h6>
+                <h6 class="foot font-weight-regular"><a href="Fragrance.html#women-fragrance">Women</a></h6>
             </div>
 
 
@@ -144,6 +206,7 @@
      </footer>
      
 
+     <script src="Fragrance.Js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
