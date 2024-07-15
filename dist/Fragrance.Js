@@ -156,24 +156,30 @@ const malePerfume = document.querySelectorAll('.male1')
 const femalePerfume = document.querySelectorAll('.female1')
 
 
+function productInfo(dataSet, index){
+
+    const product = dataSet[index]
+
+    document.getElementById('dialog-product-name').innerText = product.name
+    document.getElementById('dialog-perfume-image').src = product.img
+    document.getElementById('dialog-brand-name').innerText = product.brandName
+    document.getElementById('dialog-product-description').innerText = product.productDescription
+    document.getElementById('dialog-product-size').innerText = product.productSize
+    document.getElementById('dialog-product-cost').innerText = product.cost
+    document.getElementById('product-dialog').style.visibility = 'visible'
+    document.getElementById('Whatsapp-order').setAttribute('href', `https://wa.me/+2348036317828?text=Hello%2C%20I%20would%20like%20to%20order%20${product.name}.`)
+
+    // Set the dialog box position to be relative to the current scroll position
+        const scrollY = window.scrollY;
+        document.getElementById('product-dialog').style.top = `${scrollY}px`;
+   
+}
+
 
 malePerfume.forEach((db, index)=>{
     db.addEventListener('click', (e)=>{
         e.preventDefault()
-        const dataSet = perfume
-        const product = dataSet[index]
-            document.getElementById('dialog-product-name').innerText = product.name
-            document.getElementById('dialog-perfume-image').src = product.img
-            document.getElementById('dialog-brand-name').innerText = product.brandName
-            document.getElementById('dialog-product-description').innerText = product.productDescription
-            document.getElementById('dialog-product-size').innerText = product.productSize
-            document.getElementById('dialog-product-cost').innerText = product.cost
-            document.getElementById('product-dialog').style.visibility = 'visible'
-            document.getElementById('Whatsapp-order').setAttribute('href', `https://wa.me/+2348036317828?text=Hello%2C%20I%20would%20like%20to%20order%20${product.name}.`)
-
-            // Set the dialog box position to be relative to the current scroll position
-                const scrollY = window.scrollY;
-                document.getElementById('product-dialog').style.top = `${scrollY}px`;
+        productInfo(perfume,index)
         
     })
 })
@@ -182,20 +188,7 @@ malePerfume.forEach((db, index)=>{
 femalePerfume.forEach((db, index)=>{
     db.addEventListener('click', (e)=>{
         e.preventDefault()
-        const dataSet = perfumeforWomen
-        const product = dataSet[index]
-            document.getElementById('dialog-product-name').innerText = product.name
-            document.getElementById('dialog-perfume-image').src = product.img
-            document.getElementById('dialog-brand-name').innerText = product.brandName
-            document.getElementById('dialog-product-description').innerText = product.productDescription
-            document.getElementById('dialog-product-size').innerText = product.productSize
-            document.getElementById('dialog-product-cost').innerText = product.cost
-            document.getElementById('product-dialog').style.visibility = 'visible'
-            document.getElementById('Whatsapp-order').setAttribute('href', `https://wa.me/+2348036317828?text=Hello%2C%20I%20would%20like%20to%20order%20${product.name}.`)
-
-            // Set the dialog box position to be relative to the current scroll position
-            const scrollY = window.scrollY;
-            document.getElementById('product-dialog').style.top = `${scrollY}px`;
+        productInfo(perfumeforWomen,index)
     })
 })
 
