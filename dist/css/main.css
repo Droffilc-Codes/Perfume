@@ -19,23 +19,36 @@
 }
 
 .bottom-line {
+<<<<<<< HEAD
   background: #21165E;
+=======
+  background: #21165e;
+>>>>>>> Development-2
   width: 850px;
   height: 1rem;
   display: block;
 }
 
 .bottom-line-a {
+<<<<<<< HEAD
   background: #21165E;
+=======
+  background: #21165e;
+>>>>>>> Development-2
   width: 300px;
   height: 0.1rem;
   display: block;
 }
 
+<<<<<<< HEAD
+=======
+/* CSS for medium screens and down */
+>>>>>>> Development-2
 @media (max-width: 768px) {
   .main-menu {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
   }
   .perfume-begin .sub-menu {
     display: grid;
@@ -122,6 +135,48 @@
   }
   .display-perfume-body .display-perfume-body-b .cost {
     margin: auto;
+=======
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 425px) {
+  .search-input {
+    max-width: auto;
+  }
+  /* Adjust autocomplete list */
+  .autocomplete-list {
+    text-align: left;
+    max-width: auto; /* Adjust as needed */
+    margin: 0 auto;
+    width: 100%; /* Full width of parent */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .autocomplete-list li {
+    padding: 10px;
+  }
+}
+@media (max-width: 786px) {
+  .perfumes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .product {
+    display: block;
+  }
+  .specifications {
+    display: block;
+>>>>>>> Development-2
   }
 }
 * {
@@ -138,11 +193,16 @@ body {
 }
 
 .bg-1 {
+<<<<<<< HEAD
   background-color: #21165E;
+=======
+  background-color: #21165e;
+>>>>>>> Development-2
   color: #f4fff4;
 }
 
 .bg-2 {
+<<<<<<< HEAD
   background-color: #302AAF;
 }
 
@@ -151,10 +211,14 @@ body {
   padding: 0 1.5rem;
   margin: auto;
   overflow: hidden;
+=======
+  background-color: #302aaf;
+>>>>>>> Development-2
 }
 
 .sub-menu {
   display: flex;
+<<<<<<< HEAD
   gap: 50px;
   padding-top: 0.5rem;
   justify-content: center;
@@ -197,6 +261,230 @@ body {
 .main-menu {
   display: flex;
   gap: 25px;
+=======
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Custom CSS to style the navbar-toggler */
+  /* Style the toggler icon to resemble three lines */
+  /* Create the three lines using pseudo-elements */
+}
+.sub-menu .navbar-nav {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  text-align: center;
+}
+.sub-menu .navbar-toggler {
+  color: white; /* Set the color of the toggler icon to white */
+  border: 1px solid white; /* Add a white border */
+  padding: 10px; /* Equal padding on all sides */
+  margin-right: 10px; /* Add margin for spacing */
+  background-color: transparent; /* Optional: Set background to transparent */
+}
+.sub-menu .navbar-toggler-icon {
+  background-color: white; /* Set background color to white */
+  display: inline-block; /* Ensure it's displayed as a block */
+  width: 24px; /* Adjust width */
+  height: 2px; /* Adjust height */
+  position: relative; /* Position for pseudo-elements */
+}
+.sub-menu .navbar-toggler-icon::before,
+.sub-menu .navbar-toggler-icon::after {
+  content: "";
+  background-color: white; /* Set color of lines to white */
+  width: 100%; /* Full width */
+  height: 2px; /* Height of lines */
+  position: absolute; /* Position absolute for proper placement */
+  top: -5px; /* Adjust top position for first line */
+  left: 0;
+}
+.sub-menu .navbar-toggler-icon::after {
+  top: 5px; /* Adjust top position for third line */
+}
+
+.search-container {
+  max-width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+#search-bar {
+  flex: 1;
+  height: 55px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #595858;
+  border: none;
+  outline: none;
+  width: 100%; /* Ensure the input takes full width */
+}
+
+.search-icon {
+  background-color: #302aaf;
+  padding: 5px; /* Adjust padding for the icon */
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.search-icon .fa-search {
+  color: rgba(244, 244, 244, 0.9568627451);
+}
+
+.autocomplete-list {
+  position: absolute;
+  top: 100%; /* Position dropdown below input */
+  left: 0;
+  right: 0;
+  padding: 0px;
+  max-height: 300px;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 100; /* Ensure dropdown appears above other content */
+}
+
+.search-input.active .autocomplete-list {
+  padding: 10px 10px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocomplete-list li {
+  list-style-type: none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  display: none;
+}
+
+.search-input.active .autocomplete-list li {
+  display: block;
+  text-align: left;
+}
+
+.autocomplete-list li:hover {
+  background: #efefef;
+}
+
+/* Base styling for alert box */
+.alert-box {
+  position: fixed;
+  top: 20px; /* Distance from the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  z-index: 1000;
+  max-width: 300px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Show the alert box */
+.alert-box.show {
+  display: block; /* Show the alert box */
+  opacity: 1;
+}
+
+/* Styling for different alert types */
+.alert-box.error {
+  background-color: #f8d7da; /* Red background for errors */
+  color: #721c24; /* Dark red text for errors */
+  border: 1px solid #f5c6cb; /* Light red border for errors */
+}
+
+.alert-box.success {
+  background-color: #d4edda; /* Green background for success */
+  color: #155724; /* Dark green text for success */
+  border: 1px solid #c3e6cb; /* Light green border for success */
+}
+
+.alert-box.warning {
+  background-color: #fff3cd; /* Yellow background for warnings */
+  color: #856404; /* Dark yellow text for warnings */
+  border: 1px solid #ffeeba; /* Light yellow border for warnings */
+}
+
+.alert-box.info {
+  background-color: #d1ecf1; /* Blue background for info */
+  color: #0c5460; /* Dark blue text for info */
+  border: 1px solid #bee5eb; /* Light blue border for info */
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.specifications {
+  width: 100%; /* Take full width of the container */
+  max-width: 600px; /* Adjust max-width as needed */
+  text-align: left; /* Align text to the left within the container */
+  padding: 10px; /* Add padding for spacing */
+  margin: 0 auto;
+}
+
+.specifications p {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.specifications h3 {
+  margin-bottom: 10px;
+}
+
+.specifications .order-btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+  opacity: 0.9;
+>>>>>>> Development-2
 }
 
 .product-section .container {
@@ -215,6 +503,7 @@ body {
   width: 300px;
   height: 300px;
 }
+<<<<<<< HEAD
 
 .perfumes {
   display: grid;
@@ -222,12 +511,22 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 .perfumes h4 {
+=======
+.product-section .perfumes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.product-section .perfumes h4 {
+>>>>>>> Development-2
   color: green;
   padding: 2px;
   width: 150px;
   font-size: 1rem;
   margin: auto;
 }
+<<<<<<< HEAD
 
 .perfume-1,
 .perfume-2,
@@ -240,6 +539,20 @@ body {
   height: 300px;
 }
 
+=======
+.product-section .perfumes .perfume-1,
+.product-section .perfumes .perfume-2,
+.product-section .perfumes .perfume-3,
+.product-section .perfumes .perfume-4,
+.product-section .perfumes .perfume-5,
+.product-section .perfumes .perfume-6,
+.product-section .perfumes .perfume-7,
+.product-section .perfumes .perfume-8,
+.product-section .perfumes .perfume-9 {
+  margin: auto;
+}
+
+>>>>>>> Development-2
 .signup-section {
   padding: 20px;
 }
@@ -258,7 +571,13 @@ body {
   flex-direction: row;
   gap: 5px;
 }
+<<<<<<< HEAD
 .signup-section .input .input-1, .signup-section .input .input-2, .signup-section .input .input-3 {
+=======
+.signup-section .input .input-1,
+.signup-section .input .input-2,
+.signup-section .input .input-3 {
+>>>>>>> Development-2
   flex: 1;
 }
 .signup-section .input input[type=text] {
@@ -272,7 +591,11 @@ body {
   width: 100%;
   padding: 10px;
   border: none;
+<<<<<<< HEAD
   background-color: #007BFF;
+=======
+  background-color: #007bff;
+>>>>>>> Development-2
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -288,7 +611,11 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
+<<<<<<< HEAD
   background: #302AAF;
+=======
+  background: #302aaf;
+>>>>>>> Development-2
   width: 100%;
 }
 .main-footer .footer-a .footer-a1 h6 {
@@ -299,11 +626,19 @@ body {
   text-transform: none;
 }
 .main-footer .footer-b {
+<<<<<<< HEAD
   background: #48077C;
 }
 
 .urBrand {
   background: #21165E;
+=======
+  background: #48077c;
+}
+
+.urBrand {
+  background: #21165e;
+>>>>>>> Development-2
   color: white;
   padding: 20px;
   border-radius: 9px;
@@ -349,6 +684,7 @@ body {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
 .products-ondisplay-a {
   display: flex;
   gap: 25px;
@@ -373,6 +709,70 @@ body {
 .products-ondisplay-a .bulk-order .bulk-image {
   width: 100px;
   height: 100px;
+=======
+.bulk-image {
+  padding: 10px;
+  background-color: #f8f9fa; /* Optional: Add a background color */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.bulk-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-inner {
+  margin-top: 20px;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.text-lead {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Custom styles for carousel indicators */
+.carousel-indicators {
+  bottom: -40px; /* Adjust position */
+}
+
+.carousel-indicators li {
+  background-color: #999; /* Indicator color */
+  border: 1px solid #777; /* Border color */
+}
+
+.carousel-indicators .active {
+  background-color: #333; /* Active indicator color */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px; /* Adjust width */
+  height: 30px; /* Adjust height */
+  background-color: rgba(0, 0, 0, 0.5); /* Button background color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Rounded shape */
+  font-size: 24px; /* Icon size */
+  color: #fff; /* Icon color */
+  position: absolute; /* Positioning */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  z-index: 10; /* Ensure visibility over carousel content */
+}
+
+.carousel-control-prev:focus,
+.carousel-control-prev:hover,
+.carousel-control-next:focus,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+  color: #fff; /* Hover icon color */
+  outline: none; /* Remove focus outline */
+>>>>>>> Development-2
 }
 
 .bulkOrderForm .ordering-form {
@@ -381,8 +781,13 @@ body {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+<<<<<<< HEAD
   background: #21165E;
   color: #F9F4F4;
+=======
+  background: #21165e;
+  color: #f9f4f4;
+>>>>>>> Development-2
   border-radius: 7px;
   padding: 20px;
 }
@@ -408,7 +813,12 @@ body {
 .bulkOrderForm .ordering-form h4 {
   margin: 0;
 }
+<<<<<<< HEAD
 .bulkOrderForm .ordering-form #pick, .bulkOrderForm .ordering-form #total-quantity {
+=======
+.bulkOrderForm .ordering-form #pick,
+.bulkOrderForm .ordering-form #total-quantity {
+>>>>>>> Development-2
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -420,7 +830,11 @@ body {
   padding: 10px 15px;
   font-size: 16px;
   border-radius: 4px;
+<<<<<<< HEAD
   background-color: #4CAF50;
+=======
+  background-color: #4caf50;
+>>>>>>> Development-2
   color: white;
   cursor: pointer;
 }
@@ -428,6 +842,7 @@ body {
   margin: 0;
 }
 
+<<<<<<< HEAD
 .tableOrders .cancel {
   color: red;
 }
@@ -455,6 +870,12 @@ body {
 }
 .pay-order-a button.pay-order-a:hover {
   background-color: #0056b3;
+=======
+/* Remove icon */
+.remove-icon {
+  cursor: pointer;
+  color: red;
+>>>>>>> Development-2
 }
 
 .men-fragrance {
@@ -490,8 +911,13 @@ body {
 
 .giftset {
   width: 100% x;
+<<<<<<< HEAD
   background: #F9F4F4;
   color: #21165E;
+=======
+  background: #f9f4f4;
+  color: #21165e;
+>>>>>>> Development-2
 }
 .giftset .large-arrow {
   font-size: 2rem;
@@ -587,8 +1013,13 @@ body {
   padding: 9px;
 }
 
+<<<<<<< HEAD
 .current {
   color: #FEEC7E;
+=======
+.nav-link.active {
+  color: #feec7e !important; /* Use !important to ensure it overrides other styles */
+>>>>>>> Development-2
 }
 
 .banner-image {
