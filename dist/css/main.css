@@ -19,123 +19,24 @@
 }
 
 .bottom-line {
-<<<<<<< HEAD
-  background: #21165E;
-=======
   background: #21165e;
->>>>>>> Development-2
   width: 850px;
   height: 1rem;
   display: block;
 }
 
 .bottom-line-a {
-<<<<<<< HEAD
-  background: #21165E;
-=======
   background: #21165e;
->>>>>>> Development-2
   width: 300px;
   height: 0.1rem;
   display: block;
 }
 
-<<<<<<< HEAD
-=======
 /* CSS for medium screens and down */
->>>>>>> Development-2
 @media (max-width: 768px) {
   .main-menu {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-  }
-  .perfume-begin .sub-menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-  .product-section .perfumes {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-  .signup-section .container {
-    max-width: 600px;
-  }
-  .signup-section .input {
-    flex-direction: column;
-  }
-  .urBrand {
-    display: grid;
-    grid-template-rows: 1fr;
-  }
-  .urBrand-1 {
-    font-size: 1rem;
-  }
-  .products-ondisplay {
-    display: none;
-  }
-  .bulkOrderForm .ordering-form {
-    background: #21165E;
-    color: #F9F4F4;
-    border-radius: 7px;
-  }
-  .bulkOrderForm .ordering-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    margin-top: 15px;
-  }
-  .fragrance-a .men-fragrance {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact-page .contact {
-    width: 100%;
-    max-width: 500px;
-  }
-  .contact-page .contact .contact-page-a .text-fields {
-    width: 100%;
-    max-width: 400px;
-    display: grid;
-    grid-template-areas: "name" "email" "phone" "subject" "message";
-  }
-  .contact-page .contact .contact-page-a .text-fields .name-input {
-    grid-area: name;
-  }
-  .contact-page .contact .contact-page-a .text-fields .email-input {
-    grid-area: email;
-  }
-  .contact-page .contact .contact-page-a .text-fields .phone-input {
-    grid-area: phone;
-  }
-  .contact-page .contact .contact-page-a .text-fields .subject-input {
-    grid-area: subject;
-  }
-  .contact-page .contact .contact-page-a .text-fields .message-input {
-    grid-area: message;
-    height: 100px;
-  }
-  .display-perfume-body {
-    display: flex;
-    padding: 20px;
-    flex-direction: column; /* Stack content on mobile */
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-  .display-perfume-body .display-perfume-body-b .display-perfume-body-b-1 {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-  .display-perfume-body .display-perfume-body-b .cost {
-    margin: auto;
-=======
     align-items: center;
     text-align: center;
     margin: 0 auto;
@@ -176,7 +77,6 @@
   }
   .specifications {
     display: block;
->>>>>>> Development-2
   }
 }
 * {
@@ -193,75 +93,16 @@ body {
 }
 
 .bg-1 {
-<<<<<<< HEAD
-  background-color: #21165E;
-=======
   background-color: #21165e;
->>>>>>> Development-2
   color: #f4fff4;
 }
 
 .bg-2 {
-<<<<<<< HEAD
-  background-color: #302AAF;
-}
-
-.perfume-container {
-  width: 1280px;
-  padding: 0 1.5rem;
-  margin: auto;
-  overflow: hidden;
-=======
   background-color: #302aaf;
->>>>>>> Development-2
 }
 
 .sub-menu {
   display: flex;
-<<<<<<< HEAD
-  gap: 50px;
-  padding-top: 0.5rem;
-  justify-content: center;
-  text-align: center;
-}
-.sub-menu .search-container {
-  display: flex;
-  align-items: center;
-  border: 2px solid #ccc;
-  border-radius: 9px;
-  overflow: hidden;
-  background-color: #fff;
-}
-.sub-menu .search-input {
-  border: none;
-  padding: 5px;
-  width: 500px;
-  outline: none;
-  font-size: 16px;
-  flex: 1;
-}
-.sub-menu .search-button {
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  background-color: #007BFF;
-  color: white;
-  font-size: 16px;
-  outline: none;
-  transition: background-color 0.3s;
-}
-.sub-menu .search-button:hover {
-  background-color: #0056b3;
-}
-.sub-menu .navbar-nav {
-  display: flex;
-  flex-direction: row;
-}
-
-.main-menu {
-  display: flex;
-  gap: 25px;
-=======
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -484,7 +325,6 @@ img {
 
 .order-btn:hover {
   opacity: 0.9;
->>>>>>> Development-2
 }
 
 .product-section .container {
@@ -503,15 +343,6 @@ img {
   width: 300px;
   height: 300px;
 }
-<<<<<<< HEAD
-
-.perfumes {
-  display: grid;
-  grid-gap: 2.5px;
-  grid-template-columns: repeat(3, 1fr);
-}
-.perfumes h4 {
-=======
 .product-section .perfumes {
   display: flex;
   justify-content: space-between;
@@ -519,27 +350,12 @@ img {
   flex-wrap: nowrap;
 }
 .product-section .perfumes h4 {
->>>>>>> Development-2
   color: green;
   padding: 2px;
   width: 150px;
   font-size: 1rem;
   margin: auto;
 }
-<<<<<<< HEAD
-
-.perfume-1,
-.perfume-2,
-.perfume-3 {
-  margin: auto;
-}
-
-.perfume-image {
-  width: 300px;
-  height: 300px;
-}
-
-=======
 .product-section .perfumes .perfume-1,
 .product-section .perfumes .perfume-2,
 .product-section .perfumes .perfume-3,
@@ -552,7 +368,6 @@ img {
   margin: auto;
 }
 
->>>>>>> Development-2
 .signup-section {
   padding: 20px;
 }
@@ -571,13 +386,9 @@ img {
   flex-direction: row;
   gap: 5px;
 }
-<<<<<<< HEAD
-.signup-section .input .input-1, .signup-section .input .input-2, .signup-section .input .input-3 {
-=======
 .signup-section .input .input-1,
 .signup-section .input .input-2,
 .signup-section .input .input-3 {
->>>>>>> Development-2
   flex: 1;
 }
 .signup-section .input input[type=text] {
@@ -591,11 +402,7 @@ img {
   width: 100%;
   padding: 10px;
   border: none;
-<<<<<<< HEAD
-  background-color: #007BFF;
-=======
   background-color: #007bff;
->>>>>>> Development-2
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -611,11 +418,7 @@ img {
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
-<<<<<<< HEAD
-  background: #302AAF;
-=======
   background: #302aaf;
->>>>>>> Development-2
   width: 100%;
 }
 .main-footer .footer-a .footer-a1 h6 {
@@ -626,19 +429,11 @@ img {
   text-transform: none;
 }
 .main-footer .footer-b {
-<<<<<<< HEAD
-  background: #48077C;
-}
-
-.urBrand {
-  background: #21165E;
-=======
   background: #48077c;
 }
 
 .urBrand {
   background: #21165e;
->>>>>>> Development-2
   color: white;
   padding: 20px;
   border-radius: 9px;
@@ -684,32 +479,6 @@ img {
   border-radius: 5px;
 }
 
-<<<<<<< HEAD
-.products-ondisplay-a {
-  display: flex;
-  gap: 25px;
-}
-.products-ondisplay-a .arrow-position {
-  position: relative;
-  top: 60px;
-}
-.products-ondisplay-a .arrow-position .large-arrow {
-  font-size: 2rem;
-}
-.products-ondisplay-a .bulk-order {
-  border: #333 solid 1pt;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-  cursor: pointer;
-}
-.products-ondisplay-a .bulk-order .font-h6 {
-  font-size: 16px;
-}
-.products-ondisplay-a .bulk-order .bulk-image {
-  width: 100px;
-  height: 100px;
-=======
 .bulk-image {
   padding: 10px;
   background-color: #f8f9fa; /* Optional: Add a background color */
@@ -772,7 +541,6 @@ img {
   background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
   color: #fff; /* Hover icon color */
   outline: none; /* Remove focus outline */
->>>>>>> Development-2
 }
 
 .bulkOrderForm .ordering-form {
@@ -781,13 +549,8 @@ img {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-<<<<<<< HEAD
-  background: #21165E;
-  color: #F9F4F4;
-=======
   background: #21165e;
   color: #f9f4f4;
->>>>>>> Development-2
   border-radius: 7px;
   padding: 20px;
 }
@@ -813,12 +576,8 @@ img {
 .bulkOrderForm .ordering-form h4 {
   margin: 0;
 }
-<<<<<<< HEAD
-.bulkOrderForm .ordering-form #pick, .bulkOrderForm .ordering-form #total-quantity {
-=======
 .bulkOrderForm .ordering-form #pick,
 .bulkOrderForm .ordering-form #total-quantity {
->>>>>>> Development-2
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -830,11 +589,7 @@ img {
   padding: 10px 15px;
   font-size: 16px;
   border-radius: 4px;
-<<<<<<< HEAD
-  background-color: #4CAF50;
-=======
   background-color: #4caf50;
->>>>>>> Development-2
   color: white;
   cursor: pointer;
 }
@@ -842,40 +597,10 @@ img {
   margin: 0;
 }
 
-<<<<<<< HEAD
-.tableOrders .cancel {
-  color: red;
-}
-
-.tableOrders .pay-order {
-  margin-top: 20px;
-}
-
-.pay-order-a {
-  padding: 20px;
-}
-.pay-order-a .container {
-  max-width: 300px;
-}
-.pay-order-a button.pay-order-a {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background-color: #007BFF;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-.pay-order-a button.pay-order-a:hover {
-  background-color: #0056b3;
-=======
 /* Remove icon */
 .remove-icon {
   cursor: pointer;
   color: red;
->>>>>>> Development-2
 }
 
 .men-fragrance {
@@ -911,13 +636,8 @@ img {
 
 .giftset {
   width: 100% x;
-<<<<<<< HEAD
-  background: #F9F4F4;
-  color: #21165E;
-=======
   background: #f9f4f4;
   color: #21165e;
->>>>>>> Development-2
 }
 .giftset .large-arrow {
   font-size: 2rem;
@@ -1013,13 +733,8 @@ img {
   padding: 9px;
 }
 
-<<<<<<< HEAD
-.current {
-  color: #FEEC7E;
-=======
 .nav-link.active {
   color: #feec7e !important; /* Use !important to ensure it overrides other styles */
->>>>>>> Development-2
 }
 
 .banner-image {
