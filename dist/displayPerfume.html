@@ -38,11 +38,12 @@
                     
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle text-white h5" data-toggle="dropdown">NGN</a>
-                        <div class="dropdown-menu">
+                        <!-- Closed the drop down for currency for now -->
+                        <!-- <div class="dropdown-menu">
                             <a href="#" class="dropdown-item">USD</a>
                             <a href="#" class="dropdown-item">GBP</a>
                             <a href="#" class="dropdown-item">EUR</a>
-                        </div>
+                        </div> -->
                     
                 </ul>
                 
@@ -71,7 +72,7 @@
      <section class="display-perfume-page">
 
         <div class="diplay-perfume-name">
-          <h1 class="text-center bg-dark text-white">JEAN PAUL GAULTIER</h1>
+          <h1 class="text-center bg-dark text-white stage-name">JEAN PAUL GAULTIER</h1>
         </div>
       
         <div class="container">
@@ -79,21 +80,22 @@
           <div class="display-perfume-body">
       
             <div class="display-perfume-body-a">
-              <img src="images/perf4.jpeg" alt="" style="width: 100%; max-width: 500px;">
+              <img src="images/perf4.jpeg" class="main-image" alt="" style="width: 100%; max-width: 500px;">
             </div>
       
             <div class="display-perfume-body-b">
               <div>
-                <h3 class="h5 mb-3">JEAN PAUL GAULTIER</h3>
-                <h2 class="font-weight-bold mb-3">JEAN PAUL GAULTIER</h2>
-                <h3 class="h6 mb-3">Eau de Parfum Spray</h3>
+                <h3 class="h5 mb-3 main-name">JEAN PAUL GAULTIER</h3>
+                <h2 class="font-weight-bold mb-3 sub-name">JEAN PAUL GAULTIER</h2>
+                <h3 class="h6 mb-3 main-desc">Eau de Parfum Spray</h3>
               </div>
               <div class="display-perfume-body-b-1 mb-4">
                 <div id="first"> EXCLUSIVE</div>
                 <div id="second">NEW</div>
               </div>
               <div class="cost mb-3">
-                <h6>125ML £92.00</h6>
+                <h6 class="cost-display">£111133392.00</h6>
+                <!-- <h6 class="cost-display">125ML £92.00</h6> -->
               </div>
               <div class="button">
                 <button class="btn btn-dark btn-lg" type="submit">Order</button>
@@ -143,8 +145,8 @@
             <div class="footer-a1">
                 <h5 class="font-weight-bold">Perfume</h5>
                 <h6 class="foot font-weight-regular"><a href="Fragrance.html">Fragrance</a></h6>
-                <h6 class="foot font-weight-regular"><a href="Fragrance.html">Men</a></h6>
-                <h6 class="foot font-weight-regular"><a href="Fragrance.html">Women</a></h6>
+                <h6 class="foot font-weight-regular"><a href="Fragrance.html#men-fragrance">Men</a></h6>
+                <h6 class="foot font-weight-regular"><a href="Fragrance.html#women-fragrance">Women</a></h6>
             </div>
 
 
@@ -154,7 +156,7 @@
         </div>
      </footer>
      
-
+     <script src="displayPerfume.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
