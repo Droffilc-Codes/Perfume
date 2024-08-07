@@ -70,3 +70,29 @@ const nigeriaPhoneRegex = /^(?:\+234|0)?[789]\d{9}$/;
 function validateNigerianPhoneNumber(phoneNumber) {
     return nigeriaPhoneRegex.test(phoneNumber);
 }
+
+
+//  Trigger "active class" on nav-links
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-item .nav-link');
+  
+    navLinks.forEach(function (navLink) {
+      // Check if the current URL matches the href of the nav-link
+      if (navLink.href === window.location.href) {
+        navLink.classList.add('active');
+      }
+  
+      navLink.addEventListener('click', function (event) {
+        // Remove 'active' class from all nav-links
+        navLinks.forEach(function (link) {
+          link.classList.remove('active');
+        });
+  
+        // Add 'active' class to the clicked nav-link
+        this.classList.add('active');
+      });
+    });
+  });
+  
+
+ 

@@ -153,142 +153,80 @@
 
     <section class="contact-page">
       <div class="container">
-        <div class="contact mb-5 mx-auto">
-          <h2 class="mt-5">Contact Us</h2>
-          <div class="bottom-line my-3"></div>
-          <form action="" name="contact" class="contact-page-a">
-            <div class="text-fields mb-3">
-              <input
-                type="text"
-                class="text-input name-input"
-                placeholder="Name"
-                name="name"
-              />
-              <input
-                type="text"
-                class="text-input subject-input"
-                placeholder="Subject"
-                name="subject"
-              />
-              <input
-                type="email"
-                class="text-input email-input"
-                placeholder="Email Address"
-                name="email"
-              />
-              <input
-                type="text"
-                class="text-input phone-input"
-                placeholder="Phone Number"
-                name="phone"
-              />
-              <textarea
-                class="text-input message-input"
-                placeholder="Enter Message"
-                name="message"
-              ></textarea>
-            </div>
-            <button class="d-block btn btn-light mt-3">Send</button>
-          </form>
-        </div>
+          <div class="contact mb-5 mx-auto">
+              <h2 class="mt-5">Contact Us</h2>
+              <div class="bottom-line my-3"></div>
+              <form action="" name="contact" class="contact-page-a">
+                  <div class="text-fields mb-3">
+                      <input type="text" class="text-input name-input" placeholder="Name" name="name" required>
+                      <input type="text" class="text-input subject-input" placeholder="Subject" name="subject">
+                      <input type="email" class="text-input email-input" placeholder="Email Address" name="email" required>
+                      <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" required>
+                      <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+                  </div>
+                  <button class="d-block btn btn-light mt-3 send">Send</button>
+              </form>
+          </div>
       </div>
-    </section>
+   </section>
 
-    <!-- Signup Section -->
-    <section class="signup-section mt-3">
+   <!-- Message Sent Information -->
+   <div class="dialog-overlay" style="visibility: hidden;"> 
+      <div class="dialog-box">  <h4 class="dialog-box-msg">Message Sent Succesfully!</h4> <button class="close-btn">Close</button>
+  </div>
+</div>
+ 
+  
+
+  <!-- Signup Section -->
+   <section class="signup-section mt-3">
       <div class="container bg-1">
-        <div class="signup-section-1 mb-4">
-          <div class="product-section-topic text-center mx-auto">
-            <h3 class="h6">SIGN UP FOR SPECIAL OFFERS AND DISCOUNTS</h3>
+          <div class="signup-section-1 mb-4">
+              <div class="product-section-topic text-center mx-auto"><h3 class="h6">SIGN UP FOR SPECIAL OFFERS AND DISCOUNTS</h3></div>
           </div>
-        </div>
-        <div class="input">
-          <div class="input-1">
-            <input
-              type="text"
-              placeholder="EMAIL ADDRESS"
-              class="emailvalue1"
-            />
+          <div class="input">
+              <div class="input-1"> <input type="text" placeholder="EMAIL ADDRESS" class="emailvalue1"></div>
+              <div class="input-2"><input type="text" placeholder="PHONE NUMBER" class="phonevalue1"></div>
+              <div class="input-3"><button class="btn btn-light signup-button1"> <h6 class=" font-weight-bold pb-0">SIGN UP</h6></button></div>
           </div>
-          <div class="input-2">
-            <input type="text" placeholder="PHONE NUMBER" class="phonevalue1" />
-          </div>
-          <div class="input-3">
-            <button class="btn btn-light signup-button1">
-              <h6 class="font-weight-bold pb-0">SIGN UP</h6>
-            </button>
-          </div>
-        </div>
       </div>
-    </section>
+   </section>
 
-    <!-- Footer -->
-    <footer class="main-footer mt-5">
+ 
+   <!-- Footer -->
+   <footer class="main-footer mt-5">
       <div class="footer-a bg-1 py-4 text-white">
-        <div class="footer-a1">
-          <h5 class="font-weight-bold">More Ways to Shop</h5>
-          <h6 class="foot font-weight-regular">
-            <a href="BulkOrder.html">Bulk Orders</a>
-          </h6>
-          <h6 class="foot font-weight-regular">
-            <a href="BulkOrder.html">Discounts</a>
-          </h6>
-          <h6 class="foot font-weight-regular">
-            <a href="MakeUrBrand.html">Make ur Brand</a>
-          </h6>
-          <h6 class="foot font-weight-regular">
-            <a href="giftset.html">Gift set</a>
-          </h6>
-        </div>
-        <div class="footer-a1">
-          <h5 class="font-weight-bold">Help</h5>
-          <h6 class="foot font-weight-regular">
-            <a href="contact.html">Contact Us</a>
-          </h6>
-          <h6 class="foot font-weight-regular">
-            <a href="contact.html">Market our brands</a>
-          </h6>
-          <h6 class="foot font-weight-regular">
-            <a href="#">Shipping Info</a>
-          </h6>
-        </div>
-        <div class="footer-a1">
-          <h5 class="font-weight-bold">Perfume</h5>
-          <h6 class="foot font-weight-regular">
-            <a href="Fragrance.html">Fragrance</a>
-          </h6>
-          <h6 class="foot font-weight-regular">
-            <a href="Fragrance.html">Men</a>
-          </h6>
-          <h6 class="foot font-weight-regular">
-            <a href="Fragrance.html">Women</a>
-          </h6>
-        </div>
+         
+          <div class="footer-a1">
+              <h5 class="font-weight-bold">More Ways to Shop</h5>
+              <h6 class="foot font-weight-regular"><a href="BulkOrder.html">Bulk Orders</a></h6>
+              <h6 class="foot font-weight-regular"><a href="BulkOrder.html">Discounts</a></h6>
+              <h6 class="foot font-weight-regular"><a href="MakeUrBrand.html">Make ur Brand</a></h6>
+              <h6 class="foot font-weight-regular"><a href="giftset.html">Gift set</a></h6>
+          </div>
+          <div class="footer-a1">
+              <h5 class="font-weight-bold">Help</h5>
+              <h6 class="foot font-weight-regular"><a href="contact.html">Contact Us</a></h6>
+              <h6 class="foot font-weight-regular"><a href="contact.html">Market our brands</a></h6>
+              <h6 class="foot font-weight-regular"><a href="#">Shipping Info</a></h6>
+          </div>
+          <div class="footer-a1">
+              <h5 class="font-weight-bold">Perfume</h5>
+              <h6 class="foot font-weight-regular"><a href="Fragrance.html">Fragrance</a></h6>
+              <h6 class="foot font-weight-regular"><a href="Fragrance.html#men-fragrance">Men</a></h6>
+              <h6 class="foot font-weight-regular"><a href="Fragrance.html#women-fragrance">Women</a></h6>
+          </div>
+
+
       </div>
       <div class="footer-b py-4 bg-2">
-        <p class="text-center text-white mb-0">
-          Copyright © 2024 Perfect Collection. All Rights Reserved
-        </p>
+          <p class="text-center text-white mb-0">Copyright © 2024  Perfect Collection. All Rights Reserved</p>
       </div>
-    </footer>
-
-    <script src="contact.js"></script>
-    
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+   </footer>
+   
+   <script src="contact.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
 </html>
