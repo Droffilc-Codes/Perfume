@@ -841,17 +841,32 @@ img {
 
 //JUNE 30
 .product-dialog-overlay {
-    // position: fixed; /* Fix the overlay to the viewport */
-    position: absolute; /* Fix the overlay to the viewport */
+    // // position: fixed; /* Fix the overlay to the viewport */
+    // position: absolute; /* Fix the overlay to the viewport */
+    // top: 0;
+    // left: 0;
+    // width: 100vw;
+    // height: 100vh;
+    // background-color: rgba(0, 0, 0, 0.5); /* Transparent background with opacity */
+    // display: flex; /* Center the dialog box horizontally */
+    // justify-content: center;
+    // align-items: center;
+
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent background with opacity */
-    display: flex; /* Center the dialog box horizontally */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden; /* Initially hidden */
+    z-index: 1000; /* Ensure it's high enough */
 }
+
+    
+
 
     .product-dialog-box {
         position: relative; /* Make .dialog-box the reference for absolute positioning */
@@ -861,6 +876,7 @@ img {
         text-align: center; /* Center the message text */
         max-width: 300px;
         width: 100%;
+    
 
         .product-description{
             font-size: 10px;
@@ -918,6 +934,7 @@ img {
             }
         }
     }
+  }
 
 
-    }
+    

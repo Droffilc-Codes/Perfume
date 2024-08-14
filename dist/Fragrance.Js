@@ -169,10 +169,8 @@ function productInfo(dataSet, index){
     document.getElementById('product-dialog').style.visibility = 'visible'
     document.getElementById('Whatsapp-order').setAttribute('href', `https://wa.me/+2348036317828?text=Hello%2C%20I%20would%20like%20to%20order%20${product.name}.`)
 
-    // Set the dialog box position to be relative to the current scroll position
-        const scrollY = window.scrollY;
-        document.getElementById('product-dialog').style.top = `${scrollY}px`;
-   
+
+   console.log( document.getElementById('dialog-product-name').innerText = product.name)
 }
 
 
