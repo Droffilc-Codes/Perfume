@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/daeee2892b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Order | Perfect Collection</title>
+  </head>
+  <body>
+    <!-- HEADER WITH THE MENU -->
+    <header id="perfume-header">
+      <div class="bg-2 perfume-begin">
+        <div class="popularBrand bg-1 p-4">
+          <h4 class="text-center h6 font-weight-bold">
+            #1 MOST TRUSTED PERFUME COMPANY
+          </h4>
+        </div>
+
+        <!-- First Menu  -->
+        <nav class="navbar navbar-expand-lg sub-menu bg-2 py-3 mx-auto">
+          <div class="container">
+            <a
+              href="index.html"
+              class="navbar-brand text-white text-uppercase mr-4"
+            >
+              <img src="images/Logo.png" alt="" /> Perfect Collection</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <!-- Search box -->
+              <div class="search-container">
+                <div class="search-input my-4 mx-auto">
+                  <input
+                    type="text"
+                    placeholder="SEARCH FOR BRANDS..."
+                    id="search-bar"
+                  />
+                  <div class="autocomplete-list">
+                    <li>Burberry</li>
+                    <li>Hugo Boss</li>
+                    <li>Giorgio Armani</li>
+                    <li>Prada</li>
+                    <li>Ralph Lauren</li>
+                  </div>
+                  <div class="search-icon">
+                    <a href="#" class="link-icon"
+                      ><i class="fas fa-search"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dropdown navigation menu -->
+              <ul class="navbar-nav HelpNGN mx-auto">
+                <li class="nav-item mr-2">
+                  <a
+                    class="nav-link text-white h5"
+                    href="contact.html"
+                    id="menu"
+                    >HELP</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown mr-1 ml-2">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle text-white h5"
+                    data-toggle="dropdown"
+                    >NGN</a
+                  >
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">USD</a>
+                    <a href="#" class="dropdown-item">GBP</a>
+                    <a href="#" class="dropdown-item">EUR</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Second Menu -->
+        <nav class="navbar navbar-expand-md main-menu mx-auto">
+          <div class="display-perfume container">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white mr-3 ml-3 h5 text-capitalize"
+                  href="MakeUrBrand.html"
+                  id="menu-brand"
+                  >Make Ur Brand</a
+                >
+              </li>
+
+              <li class="nav-item active">
+                <a
+                  class="nav-link text-white mr-3 ml-3 h5 text-capitalize"
+                  href="BulkOrder.html"
+                  id="menu-order"
+                  >Bulk Order</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white mr-3 ml-3 h5 text-capitalize"
+                  href="Fragrance.html"
+                  id="menu-fragrance"
+                  >Fragrance</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white mr-3 ml-3 h5 text-capitalize"
+                  href="giftset.html"
+                  id="menu-gift"
+                  >Gift Set</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white mr-3 ml-3 h5 text-capitalize"
+                  href="brands.html"
+                  id="menu"
+                  >Brands</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Banner that can have links -->
+    <section class="banner">
+      <img src="images/banner.jpg" alt="" class="banner-image" />
+    </section>
+
+    <!-- PRODUCT CAROUSEL SLIDER -->
+    <section id="myCarousel" class="carousel slide mt-4" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <!-- Add more li elements to the carousel-indicators if needed -->
+      </ol>
+
+      <div class="carousel-inner">
+        <!-- Perfumes Carousel Slider 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-3">
+              <div class="bulk-image text-center mb-4">
+                <img src="images/perf7.jpg" class="img-fluid" alt="Perfume 1" />
+                <h6 class="text-dark mt-2">Perfume 1</h6>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+              <div class="bulk-image text-center mb-4">
+                <img src="images/perf7.jpg" class="img-fluid" alt="Perfume 2" />
+                <h6 class="text-dark mt-2">Perfume 2</h6>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+              <div class="bulk-image text-center mb-4">
+                <img src="images/perf7.jpg" class="img-fluid" alt="Perfume 3" />
+                <h6 class="text-dark mt-2">Perfume 3</h6>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+              <div class="bulk-image text-center mb-4">
+                <img src="images/perf7.jpg" class="img-fluid" alt="Perfume 4" />
+                <h6 class="text-dark mt-2">Perfume 4</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Perfumes Carousel Slider 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-3">
+              <div class="bulk-image text-center mb-4">
+                <img src="images/perf9.jpg" class="img-fluid" alt="Perfume 5" />
+                <h6 class="text-dark mt-2">Perfume 5</h6>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+              <div class="bulk-image text-center mb-4">
+                <img src="images/perf9.jpg" class="img-fluid" alt="Perfume 6" />
+                <h6 class="text-dark mt-2">Perfume 6</h6>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+              <div class="bulk-image text-center mb-4">
+                <img src="images/perf9.jpg" class="img-fluid" alt="Perfume 7" />
+                <h6 class="text-dark mt-2">Perfume 7</h6>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+              <div class="bulk-image text-center mb-4">
+                <img src="images/perf9.jpg" class="img-fluid" alt="Perfume 8" />
+                <h6 class="text-dark mt-2">Perfume 8</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more carousel-item divs for additional slides -->
+      </div>
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        href="#myCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        href="#myCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </section>
+
+    <!-- BULK ORDER FORM -->
+    <section class="bulkOrderForm mt-5">
+      <div class="container mx-auto text-center p-2">
+        <div class="ordering-form">
+          <form id="orderForm">
+            <div class="form-group">
+              <label for="pick"><h4>Product</h4></label>
+              <select id="pick">
+                <!-- Options will be populated dynamically -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="total-quantity"><h4>Quantity</h4></label>
+
+              <input
+                type="number"
+                id="total-quantity"
+                class="form-control"
+                name="total-quantity"
+                min="1"
+                placeholder="Quantity"
+                required
+              />
+              <!-- Add a span for additional information or messages -->
+              <span id="quantityMessage" class="text-white mr-auto mb-3"
+                >Minimum quantity is 1.</span
+              >
+            </div>
+            <div class="form-group">
+              <button
+                type="button"
+                class="btn-light signup-button"
+                onclick="addProduct()"
+              >
+                <h5>Add</h5>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-summary mt-4 mx-auto text-center p-2">
+      <h2 class="display-5 p-1">Order Summary</h2>
+      <table id="summaryTable" class="table table-responsive">
+        <thead>
+          <tr>
+            <th>S/n</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Discount</th>
+            <th>Clear Item</th>
+            <!-- Added Action column for Remove button -->
+          </tr>
+        </thead>
+        <tbody id="summaryBody">
+          <!-- Table body will be dynamically populated -->
+        </tbody>
+      </table>
+
+      <!-- Total price display outside the table -->
+      <div class="font-weight-bold mt-4 p-2">
+        <h3>Total Price: <span id="totalPriceDisplay">₦0.00</span></h3>
+      </div>
+
+      <!-- Order button -->
+      <button
+        type="button"
+        id="orderButton"
+        class="btn btn-primary mt-4 p-2"
+        onclick="placeOrder()"
+      >
+        Place Order
+      </button>
+    </section>
+
+
+    <div class="dialog-overlay" style="visibility: hidden;"> 
+      <div class="dialog-box">  <h4 class="dialog-box-msg">Message Sent Succesfully!</h4> <button class="close-btn">Close</button>
+  </div>
+</div>
+
+
+    <!-- Signup Section -->
+    <section class="signup-section mt-5">
+      <div class="container bg-1 mx-auto">
+        <div class="mb-4">
+          <div class="product-section-topic text-center">
+            <h3 class="h6">SIGN UP FOR SPECIAL OFFERS AND DISCOUNTS</h3>
+          </div>
+        </div>
+        <div class="input">
+          <div class="input-1">
+            <input
+              type="text"
+              placeholder="EMAIL ADDRESS"
+              class="emailvalue1"
+            />
+          </div>
+          <div class="input-2">
+            <input type="text" placeholder="PHONE NUMBER" class="phonevalue1" />
+          </div>
+          <div class="input-3">
+            <button class="btn btn-light signup-button1">
+              <h6 class="font-weight-bold pb-0">SIGN UP</h6>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer mt-5">
+      <div class="footer-a bg-1 py-4 text-white">
+        <div class="footer-a1">
+          <h5 class="font-weight-bold">More Ways to Shop</h5>
+          <h6 class="foot font-weight-regular">
+            <a href="BulkOrder.html">Bulk Orders</a>
+          </h6>
+          <h6 class="foot font-weight-regular">
+            <a href="BulkOrder.html">Discounts</a>
+          </h6>
+          <h6 class="foot font-weight-regular">
+            <a href="MakeUrBrand.html">Make ur Brand</a>
+          </h6>
+          <h6 class="foot font-weight-regular">
+            <a href="giftset.html">Gift set</a>
+          </h6>
+        </div>
+        <div class="footer-a1">
+          <h5 class="font-weight-bold">Help</h5>
+          <h6 class="foot font-weight-regular">
+            <a href="contact.html">Contact Us</a>
+          </h6>
+          <h6 class="foot font-weight-regular">
+            <a href="contact.html">Market our brands</a>
+          </h6>
+          <h6 class="foot font-weight-regular">
+            <a href="#">Shipping Info</a>
+          </h6>
+        </div>
+        <div class="footer-a1">
+          <h5 class="font-weight-bold">Perfume</h5>
+          <h6 class="foot font-weight-regular">
+            <a href="Fragrance.html">Fragrance</a>
+          </h6>
+          <h6 class="foot font-weight-regular">
+            <a href="Fragrance.html">Men</a>
+          </h6>
+          <h6 class="foot font-weight-regular">
+            <a href="Fragrance.html">Women</a>
+          </h6>
+        </div>
+      </div>
+      <div class="footer-b py-4 bg-2">
+        <p class="text-center text-white mb-0">
+          Copyright © 2024 Perfect Collection. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/bulk-order.js"></script>
+    <script src="js/main.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Function to start carousel auto interval
+      $(document).ready(function () {
+        $('#myCarousel').carousel({
+          interval: 3000, // Change interval (in milliseconds) as needed
+        });
+      });
+    </script>
+  </body>
+</html>

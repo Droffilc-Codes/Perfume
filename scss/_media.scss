@@ -1,0 +1,69 @@
+/* CSS for medium screens and down */
+// Main-menu & Sub-menu
+@media (max-width: 768px) {
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+// /* Media Query for Search-box*/
+@media (max-width: 425px) {
+  .search-input {
+    max-width: auto;
+  }
+
+  /* Adjust autocomplete list */
+  .autocomplete-list {
+    text-align: left;
+    max-width: auto; /* Adjust as needed */
+    margin: 0 auto;
+    width: 100%; /* Full width of parent */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .autocomplete-list li {
+    padding: 10px;
+  }
+}
+
+// /* Media Query for Product catalogue*/
+@media (max-width: 786px) {
+  .perfumes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// /* Media Query for Perfume Brand pages: result.html... */
+@media (max-width: 768px) {
+  .product {
+    display: block;
+  }
+
+  .specifications {
+    display: block;
+  }
+}
+
+//Fragrance women
+@media (max-width: 768px) {
+  .main-section{
+    
+    .women-fragrance, .men-fragrance{
+      display: block;
+    }
+  }
+}
+
