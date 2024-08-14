@@ -156,7 +156,7 @@
           <div class="contact mb-5 mx-auto">
               <h2 class="mt-5">Contact Us</h2>
               <div class="bottom-line my-3"></div>
-              <form action="" name="contact" class="contact-page-a">
+              <form action="" name="contact" class="contact-page-a" method="POST" netlify>
                   <div class="text-fields mb-3">
                       <input type="text" class="text-input name-input" placeholder="Name" name="name" required>
                       <input type="text" class="text-input subject-input" placeholder="Subject" name="subject">
@@ -184,11 +184,13 @@
           <div class="signup-section-1 mb-4">
               <div class="product-section-topic text-center mx-auto"><h3 class="h6">SIGN UP FOR SPECIAL OFFERS AND DISCOUNTS</h3></div>
           </div>
-          <div class="input">
-              <div class="input-1"> <input type="text" placeholder="EMAIL ADDRESS" class="emailvalue1"></div>
-              <div class="input-2"><input type="text" placeholder="PHONE NUMBER" class="phonevalue1"></div>
-              <div class="input-3"><button class="btn btn-light signup-button1"> <h6 class=" font-weight-bold pb-0">SIGN UP</h6></button></div>
-          </div>
+          <form action=""method="POST" netlify>
+            <div class="input">
+                <div class="input-1"> <input type="text" placeholder="EMAIL ADDRESS" class="emailvalue1"></div>
+                <div class="input-2"><input type="text" placeholder="PHONE NUMBER" class="phonevalue1"></div>
+                <div class="input-3"><button class="btn btn-light signup-button1"> <h6 class=" font-weight-bold pb-0">SIGN UP</h6></button></div>
+            </div>
+          </form>
       </div>
    </section>
 
