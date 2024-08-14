@@ -86,11 +86,11 @@
                     data-toggle="dropdown"
                     >NGN</a
                   >
-                  <div class="dropdown-menu">
+                  <!-- <div class="dropdown-menu">
                     <a href="#" class="dropdown-item">USD</a>
                     <a href="#" class="dropdown-item">GBP</a>
                     <a href="#" class="dropdown-item">EUR</a>
-                  </div>
+                  </div> -->
                 </li>
               </ul>
             </div>
@@ -292,22 +292,24 @@
 
     <section class="order-summary mt-4 mx-auto text-center p-2">
       <h2 class="display-5 p-1">Order Summary</h2>
-      <table id="summaryTable" class="table table-responsive">
-        <thead>
-          <tr>
-            <th>S/n</th>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Unit Price</th>
-            <th>Discount</th>
-            <th>Clear Item</th>
-            <!-- Added Action column for Remove button -->
-          </tr>
-        </thead>
-        <tbody id="summaryBody">
-          <!-- Table body will be dynamically populated -->
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table id="summaryTable" class="table ">
+          <thead>
+            <tr>
+              <th>S/n</th>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Unit Price</th>
+              <th>Discount</th>
+              <th>Clear Item</th>
+              <!-- Added Action column for Remove button -->
+            </tr>
+          </thead>
+          <tbody id="summaryBody">
+            <!-- Table body will be dynamically populated -->
+          </tbody>
+        </table>
+      </div>
 
       <!-- Total price display outside the table -->
       <div class="font-weight-bold mt-4 p-2">
@@ -410,8 +412,8 @@
       </div>
     </footer>
 
-    <script src="js/bulk-order.js"></script>
-    <script src="js/main.js"></script>
+    <script src="bulk-order.js"></script>
+    <script src="main.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
