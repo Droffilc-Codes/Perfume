@@ -18,7 +18,7 @@ const perfume = [
         brandName: 'Gucci',
         productDescription: 'Elegant floral notes blend with warm amber and musk for a timeless, captivating fragrance',
         productSize: '120ML',
-        cost: 'N5,000',
+        cost: '₦5,000',
         gender: 'male'
     },
     {
@@ -27,7 +27,7 @@ const perfume = [
         brandName: 'Gucci',
         productDescription: 'Elegant floral notes blend with warm amber and musk for a timeless, captivating fragrance',
         productSize: '100ML',
-        cost: 'N5,000',
+        cost: '₦5,000',
         gender: 'male'
 
     },
@@ -37,7 +37,7 @@ const perfume = [
         brandName: 'Gucci',
         productDescription: 'Elegant floral notes blend with warm amber and musk for a timeless, captivating fragrance',
         productSize: '120ML',
-        cost: 'N5,000',
+        cost: '₦5,000',
         gender: 'male'
     },
     {
@@ -46,7 +46,7 @@ const perfume = [
         brandName: 'Gucci',
         productDescription: 'Elegant floral notes blend with warm amber and musk for a timeless, captivating fragrance',
         productSize: '120ML',
-        cost: 'N7,000',
+        cost: '₦7,000',
         gender: 'male'
 
     },
@@ -60,7 +60,7 @@ const perfumeforWomen = [
         brandName: 'Gucci',
         productDescription: 'Elegant floral notes blend with warm amber and musk for a timeless, captivating fragrance',
         productSize: '120ML',
-        cost: 'N5,000',
+        cost: '₦5,000',
         gender: 'female'
     },
     {
@@ -69,7 +69,7 @@ const perfumeforWomen = [
         brandName: 'Gucci',
         productDescription: 'Elegant floral notes blend with warm amber and musk for a timeless, captivating fragrance',
         productSize: '100ML',
-        cost: 'N5,000',
+        cost: '₦5,000',
         gender: 'female'
     },
     {
@@ -78,7 +78,7 @@ const perfumeforWomen = [
         brandName: 'Gucci',
         productDescription: 'Elegant floral notes blend with warm amber and musk for a timeless, captivating fragrance',
         productSize: '120ML',
-        cost: 'N5,000',
+        cost: '₦5,000',
         gender: 'female'
     },
     {
@@ -87,7 +87,7 @@ const perfumeforWomen = [
         brandName: 'Gucci',
         productDescription: 'Elegant floral notes blend with warm amber and musk for a timeless, captivating fragrance',
         productSize: '120ML',
-        cost: 'N7,000',
+        cost: '₦7,000',
         gender: 'female'
     }
 ]

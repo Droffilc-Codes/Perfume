@@ -102,12 +102,12 @@ function addProduct() {
   // Assign values to the cells
   productCell.innerText = productName;
   quantityCell.innerText = quantity;
-  unitPriceCell.innerText = '$' + unitPrice.toFixed(2); // Format unit price as currency
+  unitPriceCell.innerText = '₦' + unitPrice.toFixed(2); // Format unit price as currency
   discountCell.innerText = discount + '%';
 
   // Update total price display outside the table
   document.getElementById('totalPriceDisplay').innerText =
-    '$' + totalPrice.toFixed(2);
+    '₦' + totalPrice.toFixed(2);
 
   // Clear input fields after adding product
   document.getElementById('pick').value = ''; // Clear product selection
@@ -170,7 +170,7 @@ function removeProduct(button) {
 
   // Update total price display outside the table
   document.getElementById('totalPriceDisplay').innerText =
-    '$' + totalPrice.toFixed(2);
+    '₦' + totalPrice.toFixed(2);
 
   // Update serial numbers after removing the row
   const table = document.getElementById('summaryTable');
@@ -239,5 +239,5 @@ function placeOrder() {
 
   // Update total price display outside the table
   document.getElementById('totalPriceDisplay').innerText =
-    '$' + totalPrice.toFixed(2);
+    '₦' + totalPrice.toFixed(2);
 }

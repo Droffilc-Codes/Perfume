@@ -799,7 +799,8 @@ img {
   justify-content: center;
   align-items: center;
 }
-.product-dialog-overlay .product-dialog-box {
+
+.product-dialog-box {
   position: relative; /* Make .dialog-box the reference for absolute positioning */
   background-color: white; /* Background color for the dialog box */
   padding: 20px;
@@ -808,10 +809,10 @@ img {
   max-width: 300px;
   width: 100%;
 }
-.product-dialog-overlay .product-dialog-box .product-description {
+.product-dialog-box .product-description {
   font-size: 10px;
 }
-.product-dialog-overlay .product-dialog-box .order-btn {
+.product-dialog-box .order-btn {
   padding: 10px 20px;
   background-color: #333;
   color: white;
@@ -819,10 +820,10 @@ img {
   border-radius: 5px;
   cursor: pointer; /* Change cursor style on hover */
 }
-.product-dialog-overlay .product-dialog-box .order-btn:hover {
+.product-dialog-box .order-btn:hover {
   background-color: #444; /* Change background color on hover */
 }
-.product-dialog-overlay .product-dialog-box .cancel {
+.product-dialog-box .cancel {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -831,11 +832,11 @@ img {
   font-size: 20px;
   cursor: pointer;
 }
-.product-dialog-overlay .product-dialog-box #dialog-perfume-image { /*.perfume-image */
+.product-dialog-box #dialog-perfume-image { /*.perfume-image */
   width: 70%; /*70% */
   height: 70%;
 }
-.product-dialog-overlay .product-dialog-box .circle {
+.product-dialog-box .circle {
   margin: 10px auto; /* Center the circle horizontally */
   width: 80px;
   height: 80px;
@@ -848,12 +849,12 @@ img {
   color: white;
   font-family: Arial, sans-serif;
 }
-.product-dialog-overlay .product-dialog-box .circle .product-cost .product-size {
+.product-dialog-box .circle .product-cost .product-size {
   margin: 0;
   font-size: 15px;
   color: black;
 }
-.product-dialog-overlay .product-dialog-box .circle .product-cost .cost {
+.product-dialog-box .circle .product-cost .cost {
   margin: 0;
   font-size: 15px;
 }
