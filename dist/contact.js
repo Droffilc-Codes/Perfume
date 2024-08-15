@@ -1,5 +1,5 @@
 
-
+/*
 const DOMStrings = {
     send : '.send',
     senderName :'.name-input',
@@ -107,6 +107,7 @@ function validateNigerianPhoneNumber(phoneNumber) {
     return nigeriaPhoneRegex.test(phoneNumber);
 }
 
+*/
 
 //SEARCH BOX 
 
