@@ -72,4 +72,46 @@
 @media(max-width: 768px){
 
  
+  .contact-page{
+    .contact{
+        width: 100%;
+        max-width: 300px;
+    
+        
+    .contact-page-a{
+        .text-fields{
+        width: 100%;
+        max-width: 300px;
+
+        display: grid;
+        grid-template-areas: 
+        'name' 
+        'email'
+        'phone' 
+        'subject'
+        'message';
+
+        // GRID AREAS
+       .name-input{
+        grid-area: name;
+       }
+       .email-input {
+        grid-area: email;
+       }
+       .phone-input{
+        grid-area: phone;
+       }
+       .subject-input {
+        grid-area: subject;
+       }
+       .message-input{
+        grid-area: message;
+        height: 100px;
+       }
+            }
+    }
+        
+    }
+
+}
 }
