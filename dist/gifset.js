@@ -1,4 +1,3 @@
-console.log("Welcome to Gifting Area!")
 
 const DOMStrings = {
     send : '.send',
@@ -126,7 +125,7 @@ inputBox.onkeyup = (e) => {
     emptyArray = emptyArray.map((data) => {
       return (data = '<li>' + data + '</li>');
     });
-    console.log(emptyArray);
+    // console.log(emptyArray);
     // Add classlist to search-input variable
     searchWrapper.classList.add('active'); // shows suggBox
     showSuggestions(emptyArray);

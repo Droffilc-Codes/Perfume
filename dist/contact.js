@@ -1,4 +1,4 @@
-console.log("This is contact!")
+
 
 const DOMStrings = {
     send : '.send',

@@ -170,7 +170,7 @@ function productInfo(dataSet, index){
     document.getElementById('Whatsapp-order').setAttribute('href', `https://wa.me/+2348036317828?text=Hello%2C%20I%20would%20like%20to%20order%20${product.name}.`)
 
 
-   console.log( document.getElementById('dialog-product-name').innerText = product.name)
+   
 }
 
 
@@ -286,7 +286,7 @@ inputBox.onkeyup = (e) => {
     emptyArray = emptyArray.map((data) => {
       return (data = '<li>' + data + '</li>');
     });
-    console.log(emptyArray);
+    // console.log(emptyArray);
     // Add classlist to search-input variable
     searchWrapper.classList.add('active'); // shows suggBox
     showSuggestions(emptyArray);
